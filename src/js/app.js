@@ -178,69 +178,35 @@ if (radioOrderingsWContent) {
 
 const pageDefiner = document.querySelector(".page-definer");
 const headerLinks = document.querySelectorAll(".header__link");
-const headerLinksMobile = document.querySelectorAll(".header__link-mobile");
 if (pageDefiner.classList.contains("index")) {
     headerLinks[0].classList.toggle("_active");
-    headerLinksMobile[0].classList.toggle("_active");
 };
 if (pageDefiner.classList.contains("about")) {
     headerLinks[1].classList.toggle("_active");
-    headerLinksMobile[1].classList.toggle("_active");
 };
 if (pageDefiner.classList.contains("payment")) {
     headerLinks[2].classList.toggle("_active");
-    headerLinksMobile[2].classList.toggle("_active");
 };
 if (pageDefiner.classList.contains("_for-clients")) {
     headerLinks[3].classList.toggle("_active");
-    headerLinksMobile[3].classList.toggle("_active");
 };
 if (pageDefiner.classList.contains("news") || pageDefiner.classList.contains("one-news")) {
     headerLinks[4].classList.toggle("_active");
-    headerLinksMobile[4].classList.toggle("_active");
 };
 if (pageDefiner.classList.contains("contacts")) {
     headerLinks[5].classList.toggle("_active");
-    headerLinksMobile[5].classList.toggle("_active");
 };
 
 
 //********NAVBAR*******/
-const navbarButtons = document.querySelectorAll('.navbar__button');
-const navbarImages = document.querySelectorAll('.navbar__img');
 const tabsButtons = document.querySelectorAll('.tabs__button');
 const tabsContents = document.querySelectorAll('.tabs__content');
-const productButtons = document.querySelectorAll('.product-navbar__button');
-const productContents = document.querySelectorAll('.product-navbar__content');
-const personalButtons = document.querySelectorAll('.cabinet__button');
-const personalContents = document.querySelectorAll('.cabinet__content');
-const regButtons = document.querySelectorAll('.reg__button');
-const regContents = document.querySelectorAll('.reg__content');
-const chooseCheckbox = document.querySelectorAll('.reg__choose-checkbox');
-const checkContent = document.querySelectorAll('.reg__check-content');
-const chooseContents = document.querySelectorAll('.reg__choose-content');
-const chooseRadios = document.querySelectorAll('.reg__radio-container');
 
-const checkboxes = document.querySelectorAll('.reg__checkbox-container');
+const checkboxes = document.querySelectorAll('.checkbox');
 if (checkboxes) {
     for (let i = 0; i < checkboxes.length; i++) {
         checkboxes[i].addEventListener("click", function (e) {
             checkboxes[i].classList.toggle('active');
-        })
-    }
-}
-if (navbarButtons) {
-    for (let i = 0; i < navbarButtons.length; i++) {
-        navbarButtons[i].addEventListener("click", function (e) {
-            navbarButtons.forEach(item =>
-                item.classList.remove('active')
-            );
-            navbarImages.forEach(item =>
-                item.classList.remove('active')
-            );
-
-            navbarButtons[i].classList.add('active');
-            navbarImages[i].classList.add('active');
         })
     }
 }
@@ -257,75 +223,6 @@ if (tabsButtons) {
 
             tabsButtons[i].classList.add('active');
             tabsContents[i].classList.add('active');
-        })
-    }
-}
-
-if (productButtons) {
-    for (let i = 0; i < productButtons.length; i++) {
-        productButtons[i].addEventListener("click", function (e) {
-            productButtons.forEach(item =>
-                item.classList.remove('active')
-            );
-            productContents.forEach(item =>
-                item.classList.remove('active')
-            );
-
-            productButtons[i].classList.add('active');
-            productContents[i].classList.add('active');
-        })
-    }
-}
-
-if (personalButtons) {
-    for (let i = 0; i < personalButtons.length; i++) {
-        personalButtons[i].addEventListener("click", function (e) {
-            personalButtons.forEach(item =>
-                item.classList.remove('active')
-            );
-            personalContents.forEach(item =>
-                item.classList.remove('active')
-            );
-
-            personalButtons[i].classList.add('active');
-            personalContents[i].classList.add('active');
-        })
-    }
-}
-if (regButtons) {
-    for (let i = 0; i < regButtons.length; i++) {
-        regButtons[i].addEventListener("click", function (e) {
-            regButtons.forEach(item =>
-                item.classList.remove('active')
-            );
-            regContents.forEach(item =>
-                item.classList.remove('active')
-            );
-
-            regButtons[i].classList.add('active');
-            regContents[i].classList.add('active');
-        })
-    }
-}
-if (chooseCheckbox) {
-    for (let i = 0; i < chooseCheckbox.length; i++) {
-        chooseCheckbox[i].addEventListener("click", function (e) {
-            checkContent[i].classList.toggle('active');
-        })
-    }
-}
-if (chooseRadios) {
-    for (let i = 0; i < chooseRadios.length; i++) {
-        chooseRadios[i].addEventListener("click", function (e) {
-            chooseRadios.forEach(item =>
-                item.classList.remove('active')
-            );
-            chooseContents.forEach(item =>
-                item.classList.remove('active')
-            );
-
-            chooseRadios[i].classList.add('active');
-            chooseContents[i].classList.add('active');
         })
     }
 }

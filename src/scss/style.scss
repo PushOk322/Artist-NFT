@@ -719,12 +719,23 @@ body._lock {
     }
 }
 
+.main-page-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 
 
 .height {
     height: 3000px;
 }
 
+.main-page-footer{
+    margin: 90px 0 0 0;
+    width: 100%;
+
+}
 
 @media(max-width: 1025px) {
     .main-hero {
@@ -1077,6 +1088,7 @@ body._lock {
             color: #1D1F21;
         }
     }
+
 }
 
 @media(max-width: 800px) {
@@ -1891,6 +1903,12 @@ body._lock {
             color: #1D1F21;
         }
     }
+
+    .main-page-footer {
+        margin: 35px 0 0 0;
+        width: 100%;
+
+    }
 }
 
 
@@ -1901,5 +1919,6 @@ body._lock {
 
 @import 'header';
 @import 'footer';
+@import 'contact-form';
 
 @import "../../node_modules/swiper/swiper-bundle.min.css";
