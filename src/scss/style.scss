@@ -150,6 +150,11 @@ body._lock {
     height: 0;
     position: relative;
 }
+.page-definer.gallery {
+    width: 0;
+    height: 0;
+    position: relative;
+}
 
 
 
@@ -727,9 +732,7 @@ body._lock {
 
 
 
-.height {
-    height: 3000px;
-}
+
 
 .main-page-footer{
     margin: 90px 0 0 0;
@@ -1920,5 +1923,8 @@ body._lock {
 @import 'header';
 @import 'footer';
 @import 'contact-form';
+
+
+@import 'gallery';
 
 @import "../../node_modules/swiper/swiper-bundle.min.css";
