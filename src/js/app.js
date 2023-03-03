@@ -144,6 +144,17 @@ if (dropdownButton) {
 
 }
 
+//**********COLOR-PICKER***********/
+let colors = document.querySelectorAll('.custom-form__color');
+for (let i = 0; i < colors.length; i++){
+    colors[i].addEventListener("click", function (e) { 
+        colors.forEach(item => {
+            item.classList.remove('active');
+        })
+        colors[i].classList.add('active');
+    })
+}
+
 //**********DROPDOWN-ORDERING********** */
 let radioOrderingsWContent = document.querySelectorAll('.w-content'); 
 let radioContent = document.querySelectorAll('.ordering__chosen-content'); 
