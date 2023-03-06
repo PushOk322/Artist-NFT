@@ -150,6 +150,7 @@ body._lock {
     height: 0;
     position: relative;
 }
+
 .page-definer.gallery {
     width: 0;
     height: 0;
@@ -724,7 +725,7 @@ body._lock {
     }
 }
 
-.main-page-form{
+.main-page-form {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -734,7 +735,7 @@ body._lock {
 
 
 
-.main-page-footer{
+.main-page-footer {
     margin: 90px 0 0 0;
     width: 100%;
 
@@ -1927,5 +1928,7 @@ body._lock {
 
 @import 'gallery';
 @import 'customs';
+@import 'product';
+@import 'auction';
 
 @import "../../node_modules/swiper/swiper-bundle.min.css";

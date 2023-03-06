@@ -144,6 +144,22 @@ if (dropdownButton) {
 
 }
 
+
+//************HIDDEN-INFO***************/
+let hideButton = document.querySelector(".auction-about__button");
+let hidetext = document.querySelectorAll(".auction-about__text");
+hideButton.addEventListener("click", function (e) {
+    hidetext.forEach(item => {
+        item.classList.toggle('hidden');
+    })
+    if (hidetext[0].classList.contains('hidden')) {
+        hideButton.innerHTML = "<span>Show info</span>";
+    }else{
+        hideButton.innerHTML = "<span>Hide info</span>";
+    }
+})
+
+
 //**********COLOR-PICKER***********/
 let colors = document.querySelectorAll('.custom-form__color');
 for (let i = 0; i < colors.length; i++){

@@ -1,0 +1,1774 @@
+.auction-page-header {
+    width: 100%;
+}
+
+
+.auction-page-main {
+    width: 100%;
+    background: #1D1F21;
+    display: flex;
+    justify-content: center;
+
+    &__wrapper {
+        width: 100%;
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+        position: relative;
+    }
+
+    &__blurred-img {
+        opacity: 0.7;
+        filter: blur(124.532px);
+        width: 100%;
+        max-width: 758px;
+        height: 699.04px;
+        position: absolute;
+        z-index: -1;
+        background: #86a8ff63;
+    }
+
+    &__blurred-img.first._active {
+        background: url(../img/first-blurred-img.png);
+        transition: 0.5s;
+        top: 137px;
+        left: -312px;
+        transform: rotate(180deg);
+    }
+
+    &__blurred-img.second._active {
+        background: url(../img/second-blurred-img.png);
+        transition: 0.5s;
+        top: 137px;
+        right: -276px;
+    }
+
+
+    &__circle {
+        position: absolute;
+        z-index: 3;
+    }
+
+    &__circle.first {
+        top: 583px;
+        left: 184px;
+        width: 15px;
+        height: 15px;
+    }
+
+    &__star {
+        position: absolute;
+        z-index: 3;
+    }
+
+    &__star.first {
+        top: 51px;
+        left: 104px;
+        width: 46px;
+        height: 62px;
+    }
+
+    &__star.second {
+        top: 49px;
+        right: 234px;
+        width: 24px;
+        height: 33px;
+    }
+
+}
+
+.auction-page-footer {
+    margin: 90px 0 0 0;
+    width: 100%;
+
+}
+
+.auction {
+    margin: 23px 0 0 31px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1140px;
+    gap: 32px;
+
+    &__images {
+        position: relative;
+        width: 538px;
+        height: 538px;
+        background: #86A8FF;
+        border-radius: 12px;
+    }
+
+    &__img {
+        position: absolute;
+        top: 41.5px;
+        left: 0px;
+        width: 538px;
+        height: 497px;
+    }
+
+    &__img._active {
+        background-image: url(../img/one-product-image.png);
+    }
+
+    &__main {
+        margin: 10px 0 0 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__nft-word {
+        margin: 0 0 0 0;
+        font-family: 'Proxima-700';
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.1em;
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    &__title {
+        margin: 0 0 0 0;
+        font-family: 'Proxima-700';
+        font-size: 36px;
+        line-height: 50px;
+        color: #FCFFFF;
+    }
+
+    &__info {
+        margin: 25.5px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        gap: 23.8px;
+    }
+
+    &__info.mobile {
+        display: none;
+    }
+
+    &__info-item {
+        font-family: 'Proxima-400';
+        font-size: 16px;
+        line-height: 28px;
+        color: #FCFFFF;
+
+        span {
+            font-family: 'Proxima-700';
+            font-size: 22px;
+            line-height: 34px;
+        }
+    }
+
+    #estimate-value-text {
+        margin: 0px 0 0 0;
+        font-family: 'Proxima-400';
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    &__info-line {
+        width: 0px;
+        height: 57px;
+        border-left: 1px solid #525960;
+    }
+
+    &__bid {
+        margin: 47px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        width: 540px;
+        height: 318px;
+        background: #212426;
+        border-radius: 12px;
+    }
+
+    &__bid-brow {
+        width: 100%;
+        max-width: 403px;
+        height: 16px;
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        border-radius: 0px 0px 8px 8px;
+    }
+
+    &__bid-title {
+        margin: 7px 0 0 0;
+        font-family: 'Proxima-700';
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 0.1em;
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    &__price {
+        margin: -5px 0 0 0;
+        font-family: 'Proxima-700';
+        font-size: 26px;
+        line-height: 34px;
+        color: #FCFFFF;
+    }
+
+    &__bid-form {
+        margin: 6px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        width: 455px;
+        gap: 7px;
+    }
+
+    &__label {
+        font-family: 'Proxima-400';
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0em;
+        color: #C8D2DC;
+    }
+
+    &__bid-container {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    &__input {
+        width: 100%;
+        max-width: 266px;
+        height: 64px;
+        background: #2C2F33;
+        border-radius: 9px;
+        padding: 0px 0 3px 32px;
+        font-family: 'Proxima-400';
+        font-size: 16px;
+        line-height: 21px;
+        color: #C8D2DC;
+    }
+
+    &__place-button {
+        width: 177px;
+        height: 64px;
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        border-radius: 12px;
+        padding: 19px 0 0 51px;
+        font-family: 'Proxima-700';
+        font-size: 18px;
+        line-height: 26px;
+        color: #1D1F21;
+    }
+
+    &__time-left {
+        margin: 16px 0 0 0;
+        font-family: 'Proxima-700';
+        font-size: 22px;
+        line-height: 34px;
+        word-spacing: 6px;
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    &__time-live {
+        margin: -5px 0 0 0;
+        font-family: 'Proxima-600';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: #C8D2DC;
+    }
+
+    &__text {
+        margin: 12px 0 0 0;
+        font-family: 'Proxima-400';
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: #C8D2DC;
+    }
+
+    &__text.mobile {
+        display: none;
+    }
+}
+
+
+
+.auction-about {
+    margin: 32px 0 0 30px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1140px;
+
+    &__first-words {
+
+        font-family: 'Proxima-600';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: #C8D2DC;
+    }
+
+    &__wide-line {
+        margin: 10px 0 0 0;
+        width: 540px;
+        height: 5px;
+        background: #212426;
+        border-radius: 57px;
+    }
+
+    &__short-line {
+
+        width: 124px;
+        height: 5px;
+        left: 165px;
+        top: 743px;
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        border-radius: 57px;
+    }
+
+    &__main {
+        margin: 20px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        gap: 51px;
+    }
+
+    &__description {
+        margin: 0px 0 0 0;
+        width: 100%;
+        max-width: 730px;
+        height: 575px;
+        background: #212426;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__head {
+        margin: 31px 0 0 32px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Proxima-600';
+        font-size: 14px;
+        line-height: 24px;
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        max-width: 360px;
+    }
+
+    &__vertical-line {
+        width: 4px;
+        height: 28px;
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        border-radius: 34px;
+    }
+
+    &__text {
+        margin: 15px 0 0 31px;
+        max-width: 679px;
+        font-family: 'Proxima-400';
+        font-size: 16px;
+        line-height: 28px;
+        color: #FCFFFF;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__text.hidden {
+        visibility: hidden;
+        height: 0;
+        margin: 0;
+        opacity: 0
+    }
+
+    &__text.second {
+        margin: 29px 0 0 31px;
+    }
+
+    &__button {
+        display: none;
+    }
+
+    &__card {
+        width: 100%;
+        max-width: 345px;
+        height: 514px;
+        background: linear-gradient(140.92deg, #6880FF 3.3%, #3CA7F4 52.35%, #8C45FF 92.15%);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        padding: 32px 0 0 25.5px;
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        top: 180px;
+        left: 0;
+        width: 345px;
+        height: 325px;
+        border-radius: 12px;
+    }
+
+    &__img._active {
+        background-image: url(../img/auction-about-img.png)
+    }
+
+    &__crown {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__heading {
+        margin: 4px 0 0 0;
+        font-family: 'Proxima-700';
+        font-size: 26px;
+        line-height: 34px;
+        color: #FCFFFF;
+    }
+
+    &__sentence {
+        margin: 9px 0 0 0;
+        font-family: 'Proxima-400';
+        font-size: 15px;
+        line-height: 24px;
+        color: #FCFFFF;
+    }
+
+    &__socials {
+        margin: 18px 0 0 -1px;
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+    }
+
+    &__social {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+.auction-page-footer {
+    margin: 55px 0 0 4px;
+    width: 100%;
+
+}
+
+
+
+
+@media (max-width: 1025px) {
+    .auction {
+        margin: 23px 0 0 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 1140px;
+        gap: 32px;
+
+        &__images {
+            position: relative;
+            width: 538px;
+            height: 538px;
+            background: #86A8FF;
+            border-radius: 12px;
+        }
+
+        &__img {
+            position: absolute;
+            top: 41.5px;
+            left: 0px;
+            width: 538px;
+            height: 497px;
+        }
+
+        &__img._active {
+            background-image: url(../img/one-product-image.png);
+        }
+
+        &__main {
+            margin: 10px 0 0 0;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        &__nft-word {
+            margin: 0 0 0 0;
+            font-family: 'Proxima-700';
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        &__title {
+            margin: 0 0 0 0;
+            font-family: 'Proxima-700';
+            font-size: 36px;
+            line-height: 50px;
+            color: #FCFFFF;
+        }
+
+        &__info {
+            margin: 25.5px 0 0 0;
+            display: flex;
+            flex-direction: row;
+            gap: 23.8px;
+        }
+
+        &__info.mobile {
+            display: none;
+        }
+
+        &__info-item {
+            font-family: 'Proxima-400';
+            font-size: 16px;
+            line-height: 28px;
+            color: #FCFFFF;
+
+            span {
+                font-family: 'Proxima-700';
+                font-size: 22px;
+                line-height: 34px;
+            }
+        }
+
+        #estimate-value-text {
+            margin: 0px 0 0 0;
+            font-family: 'Proxima-400';
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        &__info-line {
+            width: 0px;
+            height: 57px;
+            border-left: 1px solid #525960;
+        }
+
+        &__bid {
+            margin: 47px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            width: 540px;
+            height: 318px;
+            background: #212426;
+            border-radius: 12px;
+        }
+
+        &__bid-brow {
+            width: 100%;
+            max-width: 403px;
+            height: 16px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: 0px 0px 8px 8px;
+        }
+
+        &__bid-title {
+            margin: 7px 0 0 0;
+            font-family: 'Proxima-700';
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        &__price {
+            margin: -5px 0 0 0;
+            font-family: 'Proxima-700';
+            font-size: 26px;
+            line-height: 34px;
+            color: #FCFFFF;
+        }
+
+        &__bid-form {
+            margin: 6px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            width: 455px;
+            gap: 7px;
+        }
+
+        &__label {
+            font-family: 'Proxima-400';
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0em;
+            color: #C8D2DC;
+        }
+
+        &__bid-container {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+        }
+
+        &__input {
+            width: 100%;
+            max-width: 266px;
+            height: 64px;
+            background: #2C2F33;
+            border-radius: 9px;
+            padding: 0px 0 3px 32px;
+            font-family: 'Proxima-400';
+            font-size: 16px;
+            line-height: 21px;
+            color: #C8D2DC;
+        }
+
+        &__place-button {
+            width: 177px;
+            height: 64px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: 12px;
+            padding: 19px 0 0 51px;
+            font-family: 'Proxima-700';
+            font-size: 18px;
+            line-height: 26px;
+            color: #1D1F21;
+        }
+
+        &__time-left {
+            margin: 16px 0 0 0;
+            font-family: 'Proxima-700';
+            font-size: 22px;
+            line-height: 34px;
+            word-spacing: 6px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        &__time-live {
+            margin: -5px 0 0 0;
+            font-family: 'Proxima-600';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            color: #C8D2DC;
+        }
+
+        &__text {
+            margin: 12px 0 0 0;
+            font-family: 'Proxima-400';
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            color: #C8D2DC;
+        }
+
+        &__text.mobile {
+            display: none;
+        }
+    }
+
+    .auction-about {
+        margin: 32px 0 0 30px;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1140px;
+
+        &__first-words {
+
+            font-family: 'Proxima-600';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            color: #C8D2DC;
+        }
+
+        &__wide-line {
+            margin: 10px 0 0 0;
+            width: 540px;
+            height: 5px;
+            background: #212426;
+            border-radius: 57px;
+        }
+
+        &__short-line {
+
+            width: 124px;
+            height: 5px;
+            left: 165px;
+            top: 743px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: 57px;
+        }
+
+        &__main {
+            margin: 20px 0 0 0;
+            display: flex;
+            flex-direction: row;
+            gap: 21px;
+        }
+
+        &__description {
+            margin: 0px 0 0 0;
+            width: 100%;
+            max-width: 730px;
+            height: auto;
+            background: #212426;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__head {
+            margin: 31px 0 0 32px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Proxima-600';
+            font-size: 14px;
+            line-height: 24px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            max-width: 360px;
+        }
+
+        &__vertical-line {
+            width: 4px;
+            height: 28px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: 34px;
+        }
+
+        &__text {
+            margin: 15px 0 0 31px;
+            max-width: 679px;
+            font-family: 'Proxima-400';
+            font-size: 16px;
+            line-height: 28px;
+            color: #FCFFFF;
+        }
+
+        &__text.second {
+            margin: 29px 0 0 31px;
+        }
+
+        &__button {
+            display: none;
+        }
+
+        &__card {
+            width: 100%;
+            max-width: 345px;
+            height: 514px;
+            background: linear-gradient(140.92deg, #6880FF 3.3%, #3CA7F4 52.35%, #8C45FF 92.15%);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            padding: 32px 0 0 25.5px;
+            position: relative;
+        }
+
+        &__img {
+            position: absolute;
+            top: 180px;
+            left: 0;
+            width: 345px;
+            height: 325px;
+            border-radius: 12px;
+        }
+
+        &__img._active {
+            background-image: url(../img/auction-about-img.png)
+        }
+
+        &__crown {
+            width: 24px;
+            height: 24px;
+        }
+
+        &__heading {
+            margin: 4px 0 0 0;
+            font-family: 'Proxima-700';
+            font-size: 26px;
+            line-height: 34px;
+            color: #FCFFFF;
+        }
+
+        &__sentence {
+            margin: 9px 0 0 0;
+            font-family: 'Proxima-400';
+            font-size: 15px;
+            line-height: 24px;
+            color: #FCFFFF;
+        }
+
+        &__socials {
+            margin: 18px 0 0 -1px;
+            display: flex;
+            flex-direction: row;
+            gap: 18px;
+        }
+
+        &__social {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .auction-page-main {
+        width: 100%;
+        background: #1D1F21;
+        display: flex;
+        justify-content: center;
+
+        &__wrapper {
+            width: 100%;
+            max-width: 1440px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 2;
+            position: relative;
+        }
+
+        &__blurred-img {
+            display: none;
+        }
+
+        &__blurred-img.first._active {
+            display: none;
+        }
+
+        &__blurred-img.second._active {
+            display: none;
+        }
+
+
+        &__circle {
+            display: none;
+        }
+
+        &__circle.first {
+            display: none;
+        }
+
+        &__star {
+            display: none;
+        }
+
+        &__star.first {
+            display: none;
+        }
+
+        &__star.second {
+            display: none;
+        }
+
+    }
+
+    .auction {
+        margin: 32px 0 0 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 1140px;
+        gap: 32px;
+
+        &__images {
+            position: relative;
+            width: 345px;
+            height: 345px;
+            background: #86A8FF;
+            border-radius: 12px;
+        }
+
+        &__img {
+            position: absolute;
+            top: 26px;
+            left: 0px;
+            width: 345px;
+            height: 319px;
+        }
+
+        &__img._active {
+            background-image: url(../img/one-product-image.png);
+            background-size: 345px 319px;
+        }
+
+        &__main {
+            margin: -11px 0 0 30px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        &__nft-word {
+            margin: 0 0 0 0;
+            max-width: 71px;
+            font-family: 'Proxima-700';
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+        }
+
+        &__title {
+            margin: 0 0 0 0;
+            max-width: 345px;
+            font-family: 'Proxima-700';
+            font-size: 26px;
+            line-height: 34px;
+            color: #FCFFFF;
+        }
+
+        &__info {
+            margin: 12px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            display: none;
+        }
+
+        &__info.mobile {
+            display: flex;
+        }
+
+        &__info-item {
+            font-family: 'Proxima-400';
+            font-size: 15px;
+            line-height: 24px;
+            color: #FCFFFF;
+            max-width: 345px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 3px;
+
+            small {
+                margin-left: 3px;
+            }
+
+            br {
+                display: none;
+            }
+
+            span {
+                margin: 1px 1px 0;
+                font-family: 'Proxima-700';
+                font-size: 18px;
+                line-height: 24px;
+                height: 24px;
+            }
+        }
+
+        #estimate-value-text {
+            margin: 3.5px 0 0 0;
+            font-family: 'Proxima-400';
+            font-size: 15px;
+            line-height: 24px;
+        }
+
+        &__info-line {
+            margin-right: 30px;
+            width: 345px;
+            height: 0px;
+            border-left: none;
+            border-bottom: 1px solid #525960;
+        }
+
+
+
+
+
+        &__bid {
+            margin: 33px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            width: 345px;
+            height: 434px;
+            background: #212426;
+            border-radius: 12px;
+        }
+
+        &__bid-brow {
+            width: 100%;
+            max-width: 260px;
+            height: 10px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: 0px 0px 8px 8px;
+        }
+
+        &__bid-title {
+            margin: 18px 0 0 1px;
+            font-family: 'Proxima-700';
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        &__price {
+            margin: -5px 0 0 0;
+            font-family: 'Proxima-700';
+            font-size: 26px;
+            line-height: 34px;
+            color: #FCFFFF;
+        }
+
+        &__bid-form {
+            margin: 18px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            width: 313px;
+            gap: 6px;
+        }
+
+        &__label {
+            font-family: 'Proxima-400';
+            font-size: 13px;
+            line-height: 21px;
+            letter-spacing: 0.03em;
+            color: #C8D2DC;
+        }
+
+        &__bid-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 313px;
+        }
+
+        &__input {
+            max-width: 313px;
+            height: 64px;
+            background: #2C2F33;
+            border-radius: 9px;
+            padding: 0px 0 1px 32px;
+            font-family: 'Proxima-400';
+            font-size: 16px;
+            line-height: 21px;
+            color: #C8D2DC;
+        }
+
+        &__place-button {
+            width: 313px;
+            height: 52px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: 12px;
+            padding: 12px 0 0 125px;
+            font-family: 'Proxima-700';
+            font-size: 15px;
+            line-height: 26px;
+            color: #1D1F21;
+        }
+
+        &__time-left {
+            margin: 22px 0 0 0;
+            font-family: 'Proxima-700';
+            font-size: 18px;
+            line-height: 24px;
+            word-spacing: 5px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        &__time-live {
+            margin: 0px 0 0 0;
+            font-family: 'Proxima-600';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            color: #C8D2DC;
+        }
+
+        &__bid-line {
+            margin: 15px 0 15px 0;
+            width: 313px;
+            border-bottom: 1px solid #525960;
+        }
+
+        &__text {
+            margin: 0px 0 0 0;
+            max-width: 277px;
+            font-family: 'Proxima-400';
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            color: #C8D2DC;
+
+            br {
+                display: none;
+            }
+
+            display: none;
+        }
+
+        &__text.mobile {
+            display: flex;
+        }
+    }
+
+    .auction-about {
+        margin: 20px 0 0 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 1140px;
+
+        &__first-words {
+            font-family: 'Proxima-600';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            color: #C8D2DC;
+            // width: fit-content;
+        }
+
+        &__wide-line {
+            margin: 4px 0 0 0;
+            width: 345px;
+            height: 5px;
+            background: #212426;
+            border-radius: 57px;
+        }
+
+        &__short-line {
+
+            width: 97px;
+            height: 5px;
+            left: 165px;
+            top: 743px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: 57px;
+        }
+
+        &__main {
+            margin: 20px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        &__description {
+            margin: 0px 0 0 0;
+            width: 100%;
+            max-width: 345px;
+            height: 964px;
+            background: #212426;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__head {
+            margin: 16px 0 0 16px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 13px;
+            font-family: 'Proxima-600';
+            font-size: 14px;
+            line-height: 24px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            max-width: 229px;
+        }
+
+        &__vertical-line {
+            width: 4px;
+            height: 34px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: 34px;
+        }
+
+        &__text {
+            margin: 6px 0 0 16px;
+            max-width: 316px;
+            font-family: 'Proxima-400';
+            font-size: 15px;
+            line-height: 24px;
+            color: #FCFFFF;
+        }
+
+        &__text.second {
+            margin: 24px 0 0 16px;
+        }
+
+        &__button {
+            display: flex;
+            margin: 15px 0 0 16px;
+            width: 107px;
+            height: 40px;
+            background: #2C2F33;
+            border-radius: 6px;
+            padding: 8px 0 0 16px;
+            font-family: 'Proxima-700';
+            font-size: 18px;
+            line-height: 24px;
+
+            span {
+                background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+
+            &__:hover {
+                cursor: pointer;
+            }
+        }
+
+        &__card {
+            width: 100%;
+            max-width: 345px;
+            height: 368px;
+            background: linear-gradient(140.92deg, #6880FF 3.3%, #3CA7F4 52.35%, #8C45FF 92.15%);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            padding: 32px 0 0 25.5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        &__img {
+            position: absolute;
+            top: 182px;
+            left: 0;
+            width: 345px;
+            height: 200px;
+            border-radius: 12px;
+        }
+
+        &__img._active {
+            background-image: url(../img/auction-about-img-mobile.png);
+        }
+
+        &__crown {
+            width: 24px;
+            height: 24px;
+        }
+
+        &__heading {
+            margin: 4px 0 0 0;
+            font-family: 'Proxima-700';
+            font-size: 26px;
+            line-height: 34px;
+            color: #FCFFFF;
+        }
+
+        &__sentence {
+            margin: 8px 0 0 0;
+            font-family: 'Proxima-400';
+            font-size: 15px;
+            line-height: 24px;
+            color: #FCFFFF;
+        }
+
+        &__socials {
+            margin: 20px 0 0 -1px;
+            display: flex;
+            flex-direction: row;
+            gap: 18px;
+        }
+
+        &__social {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .auction {
+        margin: 32px 0 0 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 1140px;
+        gap: 32px;
+
+        &__images {
+            position: relative;
+            width: 345px;
+            height: 345px;
+            background: #86A8FF;
+            border-radius: 12px;
+        }
+
+        &__img {
+            position: absolute;
+            top: 26px;
+            left: 0px;
+            width: 345px;
+            height: 319px;
+        }
+
+        &__img._active {
+            background-image: url(../img/one-product-image.png);
+            background-size: 345px 319px;
+        }
+
+        &__main {
+            margin: -11px 0 0 0;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        &__nft-word {
+            margin: 0 0 0 0;
+            max-width: 71px;
+            font-family: 'Proxima-700';
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+        }
+
+        &__title {
+            margin: 0 0 0 0;
+            font-family: 'Proxima-700';
+            font-size: 26px;
+            line-height: 34px;
+            color: #FCFFFF;
+        }
+
+        &__info {
+            margin: 12px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            display: none;
+        }
+
+        &__info.mobile {
+            display: flex;
+        }
+
+        &__info-item {
+            font-family: 'Proxima-400';
+            font-size: 15px;
+            line-height: 24px;
+            color: #FCFFFF;
+            max-width: 345px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 3px;
+
+            small {
+                margin-left: 3px;
+            }
+
+            br {
+                display: none;
+            }
+
+            span {
+                margin: 1px 1px 0;
+                font-family: 'Proxima-700';
+                font-size: 18px;
+                line-height: 24px;
+                height: 24px;
+            }
+        }
+
+        #estimate-value-text {
+            margin: 3.5px 0 0 0;
+            font-family: 'Proxima-400';
+            font-size: 15px;
+            line-height: 24px;
+        }
+
+        &__info-line {
+            margin-right: 30px;
+            width: 345px;
+            height: 0px;
+            border-left: none;
+            border-bottom: 1px solid #525960;
+        }
+
+
+
+
+
+        &__bid {
+            margin: 33px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            width: 345px;
+            height: 434px;
+            background: #212426;
+            border-radius: 12px;
+        }
+
+        &__bid-brow {
+            width: 100%;
+            max-width: 260px;
+            height: 10px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: 0px 0px 8px 8px;
+        }
+
+        &__bid-title {
+            margin: 18px 0 0 1px;
+            font-family: 'Proxima-700';
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        &__price {
+            margin: -5px 0 0 0;
+            font-family: 'Proxima-700';
+            font-size: 26px;
+            line-height: 34px;
+            color: #FCFFFF;
+        }
+
+        &__bid-form {
+            margin: 18px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            width: 313px;
+            gap: 6px;
+        }
+
+        &__label {
+            font-family: 'Proxima-400';
+            font-size: 13px;
+            line-height: 21px;
+            letter-spacing: 0.03em;
+            color: #C8D2DC;
+        }
+
+        &__bid-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 313px;
+        }
+
+        &__input {
+            max-width: 313px;
+            height: 64px;
+            background: #2C2F33;
+            border-radius: 9px;
+            padding: 0px 0 1px 32px;
+            font-family: 'Proxima-400';
+            font-size: 16px;
+            line-height: 21px;
+            color: #C8D2DC;
+        }
+
+        &__place-button {
+            width: 313px;
+            height: 52px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: 12px;
+            padding: 12px 0 0 125px;
+            font-family: 'Proxima-700';
+            font-size: 15px;
+            line-height: 26px;
+            color: #1D1F21;
+        }
+
+        &__time-left {
+            margin: 22px 0 0 0;
+            font-family: 'Proxima-700';
+            font-size: 18px;
+            line-height: 24px;
+            word-spacing: 5px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        &__time-live {
+            margin: 0px 0 0 0;
+            font-family: 'Proxima-600';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            color: #C8D2DC;
+        }
+
+        &__bid-line {
+            margin: 15px 0 15px 0;
+            width: 313px;
+            border-bottom: 1px solid #525960;
+        }
+
+        &__text {
+            margin: 0px 0 0 0;
+            max-width: 277px;
+            font-family: 'Proxima-400';
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            color: #C8D2DC;
+
+            br {
+                display: none;
+            }
+
+            display: none;
+        }
+
+        &__text.mobile {
+            display: flex;
+        }
+    }
+
+    .auction-about {
+        margin: 20px 0 0 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 1140px;
+
+        &__first-words {
+            font-family: 'Proxima-600';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            color: #C8D2DC;
+        }
+
+        &__wide-line {
+            margin: 4px 0 0 0;
+            width: 345px;
+            height: 5px;
+            background: #212426;
+            border-radius: 57px;
+        }
+
+        &__short-line {
+
+            width: 97px;
+            height: 5px;
+            left: 165px;
+            top: 743px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: 57px;
+        }
+
+        &__main {
+            margin: 20px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        &__description {
+            margin: 0px 0 0 0;
+            width: 100%;
+            width: 345px;
+            height: auto;
+            background: #212426;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__head {
+            margin: 16px 0 0 16px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 13px;
+            font-family: 'Proxima-600';
+            font-size: 14px;
+            line-height: 24px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            max-width: 229px;
+        }
+
+        &__vertical-line {
+            width: 4px;
+            height: 34px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: 34px;
+        }
+
+        &__text {
+            margin: 6px 0 0 16px;
+            max-width: 316px;
+            font-family: 'Proxima-400';
+            font-size: 15px;
+            line-height: 24px;
+            color: #FCFFFF;
+        }
+
+        &__text.second {
+            margin: 24px 0 0 16px;
+        }
+
+        &__text.hidden {
+            visibility: hidden;
+            height: 0;
+            margin: 0;
+            opacity: 0;
+            transition: height 0.4s visibility 0.1s;
+        }
+
+        &__button {
+            display: flex;
+            margin: 15px 0 23px 16px;
+            width: 107px;
+            height: 40px;
+            background: #2C2F33;
+            border-radius: 6px;
+            padding: 8px 0 0 16px;
+            font-family: 'Proxima-700';
+            font-size: 18px;
+            line-height: 24px;
+
+            span {
+                background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+
+            &__:hover {
+                cursor: pointer;
+            }
+        }
+
+        &__card {
+            width: 100%;
+            width: 345px;
+            height: 368px;
+            background: linear-gradient(140.92deg, #6880FF 3.3%, #3CA7F4 52.35%, #8C45FF 92.15%);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            padding: 32px 0 0 25.5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        &__img {
+            position: absolute;
+            top: 182px;
+            left: 0;
+            width: 345px;
+            height: 200px;
+            border-radius: 12px;
+        }
+
+        &__img._active {
+            background-image: url(../img/auction-about-img-mobile.png);
+        }
+
+        &__crown {
+            width: 24px;
+            height: 24px;
+        }
+
+        &__heading {
+            margin: 4px 0 0 0;
+            font-family: 'Proxima-700';
+            font-size: 26px;
+            line-height: 34px;
+            color: #FCFFFF;
+        }
+
+        &__sentence {
+            margin: 8px 0 0 0;
+            font-family: 'Proxima-400';
+            font-size: 15px;
+            line-height: 24px;
+            color: #FCFFFF;
+        }
+
+        &__socials {
+            margin: 20px 0 0 -1px;
+            display: flex;
+            flex-direction: row;
+            gap: 18px;
+        }
+
+        &__social {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .auction-page-footer {
+        margin: 32px 0 0 0;
+        width: 100%;
+
+    }
+}
