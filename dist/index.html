@@ -1,217 +1,91 @@
 <!doctype html>
 <html lang="en">
-    <head>
+  <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Nuts-good for health">
   <link rel="stylesheet" href="css/style.min.css" media="all">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-  <title>Admin-orders-owner</title>
+  <title>Admin-messages-client</title>
 </head>
 <body>
-    <div class="_admin-orders admin_messages-wrapper">
-        <div class="admin_messages-container">
-        <div class="admin_header-wrapper"><div class="admin_header">
-    <img src="images/authorization-logo.svg" alt="logo" class="logo">
-    <div class="logOut">
-        <a href="#" class="link"><img src="images/logout.svg" alt="img"></a>
-    </div>
- </div>
- <div class="admin_header-mobile">
-    <div class="header">
-        <img src="images/authorization-logo.svg" alt="logo" class="logo">
-        <img src="images/burger.svg" alt="burger" class="burger">
-    </div>
-    <div class="header_menu">
-        <div class="item_link"><img src="images/icon-Messages.svg" alt="icon"><a href="#" class="link">Messages</a></div>
-        <div class="item_link"><img src="images/icon-Bag.svg" alt="icon"><a href="#" class="link">Orders</a></div>
-        <div class="item_link"><img src="images/icon-NFT-orders.svg" alt="icon"><a href="#" class="link">NFT Orders</a></div>
-        <div class="item_link"><img src="images/icon-workers.svg" alt="icon"><a href="#" class="link">Workers</a></div>
-        <div class="item_link"><a href="#" class="link"><img src="images/footer-logOut.svg" alt="img" class="logOut"></a></div>
-    </div>
- </div>
- <!--<script>
-    const mobMenu = document.querySelector('.header_menu');
-    const burger = document.querySelector('.burger');
-    burger.addEventListener('click', () => {
-        mobMenu.style.display = 'flex';
-        mobMenu.style.maxHeight = '100%';
-    });
-    if(mobMenu.style.maxHeight) {
-        burger.addEventListener('click', () => {
-//mobMenu.style.display = 'none';
-mobMenu.style.maxHeight = '0'
-        })
-    }
- </script>-->
- <script>
-    const mobMenu = document.querySelector('.header_menu');
-    const burger = document.querySelector('.burger');
-    burger.addEventListener('click', () => {
-        if(mobMenu.style.maxHeight) {
-            mobMenu.style.maxHeight = null;
-        } else {
-            mobMenu.style.maxHeight = '100%';
-        }
-    })
- </script></div>
-        <div class="_orders sidebar">
-            <div class="sidebar_links">
-              <div class="item"><img src="images/Message-black.svg" alt="icon"><a href="#" class="link">Messages</a></div>
-              <div class="item"><img src="images/Bag -active.svg" alt="icon"><a href="#" class="link _link-active">Orders</a></div>
-              <div class="item"><img src="images/icon-NFT-orders.svg" alt="icon"><a href="#" class="link">NFT Orders</a></div>
-              <div class="item"><img src="images/icon-workers.svg" alt="icon"><a href="#" class="link">Workers</a></div>
-            </div>
-            <div class="sidebar_footer">
-              <a href="#" class="link"><img src="images/footer-logOut.svg" alt="img" class="logOut"></a>
-              <span class="text">All rights reserved © 2022</span>
+  <div class="school_wrapper">
+    <div class="admin_header-wrapper"><div class="header">
+    <div class="header__wrapper">
+        <div class="header__left">
+            <img src="images/header-logo.svg" alt="" class="header__logo">
+            <div class="header__links">
+                <a href="index.html">
+                <div class="header__link">
+                    Main page
+                </div>
+                </a>
+                <a href="index.html">
+                <div class="header__link">
+                    <img src="images/header-lock-icon.svg" alt="" class="header__lock-icon">
+                    NFT
+                </div>
+                </a>
+                <a href="index.html">
+                <div class="header__link">
+                    Pictures
+                </div>
+                </a>
+                
+                <a href="index.html">
+                <div class="header__link">
+                    Auction
+                </div>
+                </a>
+                
+                <a href="index.html">
+                <div class="header__link">
+                    Pricing
+                </div>
+                </a>
+                
+                <a href="index.html">
+                <div class="header__link">
+                    Contacts
+                </div>
+                </a>
+                
+                <a href="index.html">
+                <div class="header__link">
+                    Blog
+                </div>
+                </a>
+                
             </div>
         </div>
-        <div class="_order_list">
-           <div class="header">
-            <h3 class="subtitle">Type of item</h3>
-            <h3 class="subtitle">Color</h3>
-            <h3 class="subtitle">E-mail</h3>
-            <h3 class="subtitle">Size</h3>
-            <h3 class="subtitle">Comment</h3>
-            <h3 class="subtitle">Delivery address</h3>
-            <h3 class="subtitle">Action</h3>
-           </div>
-           <h2 class="mobile-title">My orders</h2>
-           <div class="item_order">
-             <h4 class="title">T-SHIRT</h4>
-             <img src="images/orange-order.svg" alt="img" class="color">
-             <span class="text _email">emailofcustomer@gmail.com</span>
-             <span class="size_title">Size</span>
-             <span class="text _size">XL (99-99-99)</span>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-                <p class="text_mobile">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-             </div>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-                <p class="text_mobile">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-             </div>
-             <a href="#" class="link">Message</a>
-           </div>
-           <div class="item_order">
-             <h4 class="title">T-SHIRT</h4>
-             <img src="images/orange-order.svg" alt="img" class="color">
-             <span class="text _email">emailofcustomer@gmail.com</span>
-             <span class="text _size">XL (99-99-99)</span>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <a href="#" class="link">Message</a>
-           </div>
-           <div class="item_order">
-             <h4 class="title">T-SHIRT</h4>
-             <img src="images/orange-order.svg" alt="img" class="color">
-             <span class="text _email">emailofcustomer@gmail.com</span>
-             <span class="text _size">XL (99-99-99)</span>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <a href="#" class="link">Message</a>
-           </div>
-           <div class="item_order">
-             <h4 class="title">T-SHIRT</h4>
-             <img src="images/orange-order.svg" alt="img" class="color">
-             <span class="text _email">emailofcustomer@gmail.com</span>
-             <span class="text _size">XL (99-99-99)</span>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <a href="#" class="link">Message</a>
-           </div>
-           <div class="item_order">
-             <h4 class="title">T-SHIRT</h4>
-             <img src="images/orange-order.svg" alt="img" class="color">
-             <span class="text _email">emailofcustomer@gmail.com</span>
-             <span class="text _size">XL (99-99-99)</span>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <a href="#" class="link">Message</a>
-           </div>
-           <div class="item_order">
-             <h4 class="title">T-SHIRT</h4>
-             <img src="images/orange-order.svg" alt="img" class="color">
-             <span class="text _email">emailofcustomer@gmail.com</span>
-             <span class="text _size">XL (99-99-99)</span>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <a href="#" class="link">Message</a>
-           </div>
-           <div class="item_order">
-             <h4 class="title">T-SHIRT</h4>
-             <img src="images/orange-order.svg" alt="img" class="color">
-             <span class="text _email">emailofcustomer@gmail.com</span>
-             <span class="text _size">XL (99-99-99)</span>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <a href="#" class="link">Message</a>
-           </div>
-           <div class="item_order">
-             <h4 class="title">T-SHIRT</h4>
-             <img src="images/orange-order.svg" alt="img" class="color">
-             <span class="text _email">emailofcustomer@gmail.com</span>
-             <span class="text _size">XL (99-99-99)</span>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <a href="#" class="link">Message</a>
-           </div>
+        <div class="header__buttons">
+            <div class="header__lang">
+                <div class="header__lang-text">ENG</div>
+                <img src="images/header-arrow.svg" alt="" class="header__lang-arrow">
+            </div>
+            <div class="header__auth-button">
+                <span>
+                Authorization
+                </span>
+            </div>
+            <div class="header__premium-button">
+                
+                Premium access
+            </div>
+        </div>
 
-        </div>
+
+        <div class="header__mobile-buttons">
+            <div class="header__premium-mobile">
+                <img src="images/header-crown.svg" alt="" class="header__premium-crown">
+            </div>
+            <div class="menu-icon">
+                <span></span>
+            </div>
         </div>
     </div>
-    <script>
-      const detect = document.querySelector('._admin-orders');
-      const active = document.querySelector('._link-active');
-      if(detect) {
-        active.style.color = '#FCFFFF';
-      }
-    </script>
+</div></div>
+  </div>
 </body>
 </html>
