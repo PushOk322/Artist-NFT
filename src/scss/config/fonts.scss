@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Proximanova-bold;
+  font-display: swap;
+  src: url("../fonts/proximanova_bold.woff2") format("woff2"), url("../fonts/proximanova_bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+};
+@font-face {
+  font-family: Proximanova-regular;
+  font-display: swap;
+  src: url("../fonts/proximanova_regular.woff2") format("woff2"), url("../fonts/proximanova_regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+};
+@font-face {
+  font-family: Proximanova-semiBold;
+  font-display: swap;
+  src: url("../fonts/proximanova-Sbold.woff2") format("woff2"), url("../fonts/proximanova-Sbold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+};

@@ -1,20 +1,17 @@
-import webpack from "webpack-stream";
-import minify from "gulp-minify";
+import webpack from 'webpack-stream'
+import { webpackConfig } from '../../webpack.config.js'
 
-export const js = () => {
-    return app.gulp.src(app.path.src.js)
-        .pipe(app.plugins.plumber(
-            app.plugins.notify.onError({
-                title: "JS",
-                message: "Error: <%= error.message %>"
-            })
-        ))
-        .pipe(webpack({
-            mode: 'development',
-            output: {
-                filename: 'app.js',
-            },
-        }))
-        .pipe(minify())
-        .pipe(app.gulp.dest(app.path.build.js));
-}
+export const js = () =>
+  app.gulp
+    .src(app.path.src.js, { sourcemaps: app.isDev })
+    .pipe(
+      app.plugins.plumber(
+        app.plugins.notify.onError({
+          title: 'JS',
+          message: 'Error: <%= error.message %>',
+        })
+      )
+    )
+    .pipe(webpack({ config: webpackConfig(app.isDev) }))
+    .pipe(app.gulp.dest(app.path.build.js))
+    .pipe(app.plugins.browserSync.stream())

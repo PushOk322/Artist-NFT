@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+    <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Nuts-good for health">
+  <link rel="stylesheet" href="css/style.min.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <title>Admin-workers-owner</title>
+</head>
+<body>
+    <div class="_admin-orders admin_messages-wrapper">
+        <div class="admin_messages-container">
+        <div class="admin_header-wrapper"><div class="admin_header">
+    <a href="main.html"><img src="images/authorization-logo.svg" alt="logo" class="logo"></a>
+    <div class="logOut">
+        <a href="#" class="link"><img src="images/logout.svg" alt="img"></a>
+    </div>
+ </div>
+ <div class="admin_header-mobile">
+    <div class="header">
+        <img src="images/authorization-logo.svg" alt="logo" class="logo">
+        <img src="images/burger.svg" alt="burger" class="burger">
+    </div>
+    <div class="header_menu">
+        <div class="item_link"><img src="images/icon-Messages.svg" alt="icon"><a href="admin-messages.html" class="link">Messages</a></div>
+        <div class="item_link"><img src="images/icon-Bag.svg" alt="icon"><a href="admin-orders.html" class="link">Orders</a></div>
+        <div class="item_link"><img src="images/icon-NFT-orders.svg" alt="icon"><a href="#" class="link">NFT Orders</a></div>
+        <div class="item_link"><img src="images/icon-workers.svg" alt="icon"><a href="#" class="link">Workers</a></div>
+        <div class="item_link"><a href="#" class="link"><img src="images/footer-logOut.svg" alt="img" class="logOut"></a></div>
+    </div>
+ </div>
+ <!--<script>
+    const mobMenu = document.querySelector('.header_menu');
+    const burger = document.querySelector('.burger');
+    burger.addEventListener('click', () => {
+        mobMenu.style.display = 'flex';
+        mobMenu.style.maxHeight = '100%';
+    });
+    if(mobMenu.style.maxHeight) {
+        burger.addEventListener('click', () => {
+//mobMenu.style.display = 'none';
+mobMenu.style.maxHeight = '0'
+        })
+    }
+ </script>-->
+ <script>
+    const mobMenu = document.querySelector('.header_menu');
+    const burger = document.querySelector('.burger');
+    burger.addEventListener('click', () => {
+        if(mobMenu.style.maxHeight) {
+            mobMenu.style.maxHeight = null;
+        } else {
+            mobMenu.style.maxHeight = '100%';
+        }
+    })
+ </script></div>
+        <div class="_orders sidebar">
+            <div class="sidebar_links">
+              <div class="item"><img src="images/Message-black.svg" alt="icon"><a href="admin-messages.html" class="link">Messages</a></div>
+              <div class="item"><img src="images/Bag -active.svg" alt="icon"><a href="admin-orders.html" class="link">Orders</a></div>
+              <div class="item"><img src="images/icon-NFT-orders.svg" alt="icon"><a href="admin-NFT-orders.html" class="link">NFT Orders</a></div>
+              <div class="item"><img src="images/icon-workers.svg" alt="icon"><a href="#" class="link _link-active">Workers</a></div>
+            </div>
+            <div class="sidebar_footer">
+              <a href="#" class="link"><img src="images/footer-logOut.svg" alt="img" class="logOut"></a>
+              <span class="text">All rights reserved © 2022</span>
+            </div>
+        </div>
+        <div class="_NFT-order-list _admin-workers-list _order_list">
+           <div class="header">
+            <h3 class="subtitle">Name</h3>
+            <h3 class="subtitle">Mail</h3>
+            <h3 class="subtitle">Comment</h3>
+            <h3 class="subtitle">Plan</h3>
+            </div>
+           <h2 class="mobile-title">My NFT orders</h2>
+           <div class="item_order">
+              <div class="product_wrapper">
+               <p class="text">T-SHIRT </p>
+              </div>
+               <p class="text-mail">emailofcustomer@gmail.com</p>
+                <div class="comment_wrapper">
+                <p class="text">Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. 
+                  The use him without greatly can private. </p>
+                  <span class="show-more">Show more</span>
+               </div>
+               <div class="plan">
+                One month
+               </div>
+              </div>
+           <div class="item_order">
+              <div class="product_wrapper">
+               <p class="text">T-SHIRT </p>
+              </div>
+               <p class="text-mail">emailofcustomer@gmail.com</p>
+                <div class="comment_wrapper">
+                <p class="text">Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. 
+                  The use him without greatly can private. </p>
+                  <span class="show-more">Show more</span>
+               </div>
+               <div class="plan">
+                One month
+               </div>
+              </div>
+           <div class="item_order">
+              <div class="product_wrapper">
+               <p class="text">T-SHIRT </p>
+              </div>
+               <p class="text-mail">emailofcustomer@gmail.com</p>
+                <div class="comment_wrapper">
+                <p class="text">Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. 
+                  The use him without greatly can private. </p>
+                  <span class="show-more">Show more</span>
+               </div>
+               <div class="plan">
+                One month
+               </div>
+              </div>
+           <div class="item_order">
+              <div class="product_wrapper">
+               <p class="text">T-SHIRT </p>
+              </div>
+               <p class="text-mail">emailofcustomer@gmail.com</p>
+                <div class="comment_wrapper">
+                <p class="text">Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. 
+                  The use him without greatly can private. </p>
+                  <span class="show-more">Show more</span>
+               </div>
+               <div class="plan">
+                One month
+               </div>
+              </div>
+           <div class="item_order">
+              <div class="product_wrapper">
+               <p class="text">T-SHIRT </p>
+              </div>
+               <p class="text-mail">emailofcustomer@gmail.com</p>
+                <div class="comment_wrapper">
+                <p class="text">Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. 
+                  The use him without greatly can private. </p>
+                  <span class="show-more">Show more</span>
+               </div>
+               <div class="plan">
+                One month
+               </div>
+              </div>
+           <div class="item_order">
+              <div class="product_wrapper">
+               <p class="text">T-SHIRT </p>
+              </div>
+               <p class="text-mail">emailofcustomer@gmail.com</p>
+                <div class="comment_wrapper">
+                <p class="text">Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. 
+                  The use him without greatly can private. </p>
+                  <span class="show-more">Show more</span>
+               </div>
+               <div class="plan">
+                One month
+               </div>
+              </div>
+           <div class="item_order">
+              <div class="product_wrapper">
+               <p class="text">T-SHIRT </p>
+              </div>
+               <p class="text-mail">emailofcustomer@gmail.com</p>
+                <div class="comment_wrapper">
+                <p class="text">Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. 
+                  The use him without greatly can private. </p>
+                  <span class="show-more">Show more</span>
+               </div>
+               <div class="plan">
+                One month
+               </div>
+              </div>
+           <div class="item_order">
+              <div class="product_wrapper">
+               <p class="text">T-SHIRT</p>
+              </div>
+               <p class="text-mail">emailofcustomer@gmail.com</p>
+                <div class="comment_wrapper">
+                <p class="text">Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. 
+                  The use him without greatly can private. </p>
+                  <span class="show-more">Show more</span>
+               </div>
+               <div class="plan">
+                One month
+               </div>
+              </div>
+          
+          <!--mobile-item------------------------------------------------------------------->
+          <div class="item_order-mobile">
+            <div class="logo_info">
+                <div class="text_wrapper">
+                <p class="text">T-SHIRT</p>
+                <span class="date">emailofcustomer@gmail.com</span>
+              </div>
+             </div>
+             <div class="line_wrapper">
+              <span class="text">Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. 
+                The use him without greatly can private. </span>
+                <span class="show-more">Show more</span>
+               </div>
+             <div class="plan">
+              Plan : One month
+             </div>
+          </div>
+          <div class="item_order-mobile">
+            <div class="logo_info">
+                <div class="text_wrapper">
+                <p class="text">T-SHIRT</p>
+                <span class="date">emailofcustomer@gmail.com</span>
+              </div>
+             </div>
+             <div class="line_wrapper">
+              <span class="text">Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. 
+                The use him without greatly can private. </span>
+                <span class="show-more">Show more</span>
+               </div>
+             <div class="plan">
+              Plan : One month
+             </div>
+          </div>
+          <div class="item_order-mobile">
+            <div class="logo_info">
+                <div class="text_wrapper">
+                <p class="text">T-SHIRT</p>
+                <span class="date">emailofcustomer@gmail.com</span>
+              </div>
+             </div>
+             <div class="line_wrapper">
+              <span class="text">Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. 
+                The use him without greatly can private. </span>
+                <span class="show-more">Show more</span>
+               </div>
+             <div class="plan">
+              Plan : One month
+             </div>
+          </div>
+           <!-------------------------------------------------------------------------------------->
+        </div>
+        </div>
+    </div>
+    <script>
+      const detect = document.querySelector('._admin-orders');
+      const active = document.querySelector('._link-active');
+      if(detect) {
+        active.style.color = '#FCFFFF';
+      }
+    </script>
+</body>
+</html>
