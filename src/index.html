@@ -1,168 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-    @@include('html/head.html', {
-        'title': 'Admin-orders-owner'
-      })
+  @@include('html/head.html', {
+    'title': 'Admin-messages-client'
+  })
 <body>
-    <div class="admin_messages-wrapper _admin-orders">
-        <div class="admin_messages-container">
-        <div class="admin_header-wrapper">@@include('html/admin-header.html', {})</div>
-        <div class="sidebar _orders">
-            <div class="sidebar_links">
-              <div class="item"><img src="@img/Message-black.svg" alt="icon"><a href="#" class="link">Messages</a></div>
-              <div class="item"><img src="@img/Bag -active.svg" alt="icon"><a href="#" class="link _link-active">Orders</a></div>
-              <div class="item"><img src="@img/icon-NFT-orders.svg" alt="icon"><a href="#" class="link">NFT Orders</a></div>
-              <div class="item"><img src="@img/icon-workers.svg" alt="icon"><a href="#" class="link">Workers</a></div>
-            </div>
-            <div class="sidebar_footer">
-              <a href="#" class="link"><img src="@img/footer-logOut.svg" alt="img" class="logOut"></a>
-              <span class="text">All rights reserved © 2022</span>
-            </div>
-        </div>
-        <div class="_order_list">
-           <div class="header">
-            <h3 class="subtitle">Type of item</h3>
-            <h3 class="subtitle">Color</h3>
-            <h3 class="subtitle">E-mail</h3>
-            <h3 class="subtitle">Size</h3>
-            <h3 class="subtitle">Comment</h3>
-            <h3 class="subtitle">Delivery address</h3>
-            <h3 class="subtitle">Action</h3>
-           </div>
-           <h2 class="mobile-title">My orders</h2>
-           <div class="item_order">
-             <h4 class="title">T-SHIRT</h4>
-             <img src="@img/orange-order.svg" alt="img" class="color">
-             <span class="text _email">emailofcustomer@gmail.com</span>
-             <span class="size_title">Size</span>
-             <span class="text _size">XL (99-99-99)</span>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-                <p class="text_mobile">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-             </div>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-                <p class="text_mobile">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-             </div>
-             <a href="#" class="link">Message</a>
-           </div>
-           <div class="item_order">
-             <h4 class="title">T-SHIRT</h4>
-             <img src="@img/orange-order.svg" alt="img" class="color">
-             <span class="text _email">emailofcustomer@gmail.com</span>
-             <span class="text _size">XL (99-99-99)</span>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <a href="#" class="link">Message</a>
-           </div>
-           <div class="item_order">
-             <h4 class="title">T-SHIRT</h4>
-             <img src="@img/orange-order.svg" alt="img" class="color">
-             <span class="text _email">emailofcustomer@gmail.com</span>
-             <span class="text _size">XL (99-99-99)</span>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <a href="#" class="link">Message</a>
-           </div>
-           <div class="item_order">
-             <h4 class="title">T-SHIRT</h4>
-             <img src="@img/orange-order.svg" alt="img" class="color">
-             <span class="text _email">emailofcustomer@gmail.com</span>
-             <span class="text _size">XL (99-99-99)</span>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <a href="#" class="link">Message</a>
-           </div>
-           <div class="item_order">
-             <h4 class="title">T-SHIRT</h4>
-             <img src="@img/orange-order.svg" alt="img" class="color">
-             <span class="text _email">emailofcustomer@gmail.com</span>
-             <span class="text _size">XL (99-99-99)</span>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <a href="#" class="link">Message</a>
-           </div>
-           <div class="item_order">
-             <h4 class="title">T-SHIRT</h4>
-             <img src="@img/orange-order.svg" alt="img" class="color">
-             <span class="text _email">emailofcustomer@gmail.com</span>
-             <span class="text _size">XL (99-99-99)</span>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <a href="#" class="link">Message</a>
-           </div>
-           <div class="item_order">
-             <h4 class="title">T-SHIRT</h4>
-             <img src="@img/orange-order.svg" alt="img" class="color">
-             <span class="text _email">emailofcustomer@gmail.com</span>
-             <span class="text _size">XL (99-99-99)</span>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <a href="#" class="link">Message</a>
-           </div>
-           <div class="item_order">
-             <h4 class="title">T-SHIRT</h4>
-             <img src="@img/orange-order.svg" alt="img" class="color">
-             <span class="text _email">emailofcustomer@gmail.com</span>
-             <span class="text _size">XL (99-99-99)</span>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <div class="text_wrapper">
-                <span class="text">Lorem ipsum dolor sit amet</span>
-                <a class="show-more">Show more</a>
-             </div>
-             <a href="#" class="link">Message</a>
-           </div>
-
-        </div>
-        </div>
+  <div class="school_wrapper">
+    <div class="admin_header-wrapper">@@include('html/header.html', {})</div>
+    <div class="registration_block">
+      <div class="register_form">
+        <p class="title">Register to be a designer</p>
+        <p class="text">Indulgence announcing uncommonly met she continuing two unpleasing terminated</p>
+        <a href="#" class="link">Sign up</a>
+      </div>
+      <div class="img_wrapper">
+        <img src="@img/laptopBg.webp" alt="img" class="imgBg">
+        <img src="@img/laptop.webp" alt="img" class="img">
+        <img src="@img/star.svg" alt="img" class="star-left">
+        <img src="@img/star-right.svg" alt="img" class="star-right">
+      </div>
+      <img src="@img/CUTOM BY YOUR OWN.svg" alt="img" class="word_left">
+      <img src="@img/UNIQUE CLOTHES.svg" alt="img" class="word_bottom">
     </div>
-    <script>
-      const detect = document.querySelector('._admin-orders');
-      const active = document.querySelector('._link-active');
-      if(detect) {
-        active.style.color = '#FCFFFF';
-      }
-    </script>
+    <!------------------------------------------------------------------------------------------------------>
+    <div class="benefits_block">
+      <div class="header">
+        <p class="text _color">OUR BENEFITS</p>
+        <p class="text">Benefits of an art school</p>
+      </div>
+       <div class="item">
+        <div class="img_wrapper">
+          <img src="@img/item-star.svg" alt="img" class="img">
+        </div>
+        <span class="title">Title of benefits</span>
+        <p class="text">May indulgence difficulty ham can put especially. Bringing remember for supplied her why was confined.</p>
+       </div>
+       <div class="item">
+        <div class="img_wrapper">
+          <img src="@img/item-star.svg" alt="img" class="img">
+        </div>
+        <span class="title">Title of benefits</span>
+        <p class="text">May indulgence difficulty ham can put especially. Bringing remember for supplied her why was confined.</p>
+       </div>
+       <div class="item">
+        <div class="img_wrapper">
+          <img src="@img/item-star.svg" alt="img" class="img">
+        </div>
+        <span class="title">Title of benefits</span>
+        <p class="text">May indulgence difficulty ham can put especially. Bringing remember for supplied her why was confined.</p>
+       </div>
+       <div class="item">
+        <div class="img_wrapper">
+          <img src="@img/item-star.svg" alt="img" class="img">
+        </div>
+        <span class="title">Title of benefits</span>
+        <p class="text">May indulgence difficulty ham can put especially. Bringing remember for supplied her why was confined.</p>
+       </div>
+    </div>
+    <!--------------------------------------------------------------------------------------->
+    <div class="school_fees-block">
+      <div class="school_fees-container">
+        <div class="header">
+          <p class="title">Artist School Fees</p>
+          <p class="text">Indulgence announcing uncommonly met she continuing two unpleasing terminated</p>
+        </div>
+        <div class="card _card1">
+          <div class="img_wrapper"><img src="@img/1 WEEK.svg" alt="img" class="title"></div>
+          <img src="@img/card1-blur.svg" alt="img" class="blur-card">
+          <div class="header">
+            <img src="@img/card1-hand.svg" alt="img" class="hand">
+            <img src="@img/card1-board.svg" alt="img" class="board">
+          </div>
+          <div class="line_wrapper">
+          <div class="line _borderBottom">
+            <img src="@img/Diamond.svg" alt="img" class="diamond">
+            <p class="text">To purchase item by crypto you have to send money to this wallet. After 5 minute result 
+              will sent in your mail</p>
+          </div>
+          </div>
+          <div class="line_wrapper">
+          <div class="line _borderBottom">
+            <img src="@img/Diamond.svg" alt="img" class="diamond">
+            <p class="text">To purchase item by crypto you have to send money</p>
+          </div>
+          </div>
+          <div class="line_wrapper">
+          <div class="line _borderBottom">
+            <img src="@img/Diamond.svg" alt="img" class="diamond">
+            <p class="text">To purchase item by crypto you have to send money to this wallet. After 5 minute result will sent in your mail</p>
+          </div>
+          </div>
+          <div class="line_wrapper">
+          <div class="line _borderBottom  _noBorder">
+            <img src="@img/Diamond.svg" alt="img" class="diamond">
+            <p class="text">To purchase item by crypto you have to send money</p>
+          </div>
+          </div>
+          <div class="price_wrapper">
+            <a href="#" class="button">Сhoose</a>
+            <p class="text">$250.99</p>
+          </div>
+        </div>
+        <!--card2----------------------------------------------------------------------------------->
+        <div class="card _card2">
+          <div class="img_wrapper"><img src="@img/Individual.svg" alt="img" class="title"></div>
+          <img src="@img/card2-blur.webp" alt="img" class="blur-card">
+          <div class="header">
+            <img src="@img/card2-hand.webp" alt="img" class="hand">
+            <img src="@img/card2-board.webp" alt="img" class="board">
+          </div>
+          <div class="line_wrapper _marginTop">
+          <div class="line _borderBottom">
+            <img src="@img/Diamond.svg" alt="img" class="diamond">
+            <p class="text">To purchase item by crypto you have to send money to this wallet. After 5 minute result 
+              will sent in your mail</p>
+          </div>
+          </div>
+          <div class="line_wrapper">
+          <div class="line _borderBottom">
+            <img src="@img/Diamond.svg" alt="img" class="diamond">
+            <p class="text">To purchase item by crypto you have to send money</p>
+          </div>
+          </div>
+          <div class="line_wrapper">
+          <div class="line _borderBottom">
+            <img src="@img/Diamond.svg" alt="img" class="diamond">
+            <p class="text">To purchase item by crypto you have to send money to this wallet. After 5 minute result will sent in your mail</p>
+          </div>
+          </div>
+          <div class="line_wrapper">
+          <div class="line _borderBottom  _noBorder">
+            <img src="@img/Diamond.svg" alt="img" class="diamond">
+            <p class="text">To purchase item by crypto you have to send money</p>
+          </div>
+          </div>
+          <div class="price_wrapper">
+            <a href="#" class="button"><span>Choose</span></a>
+            <p class="text">$250.99</p>
+            </div>
+        </div>
+        <!--card3--------------------------------------------------------------------------------->
+        <div class="card _card3">
+          <div class="img_wrapper"><img src="@img/MONTH.svg" alt="img" class="title"></div>
+          <img src="@img/card3-blur.webp" alt="img" class="blur-card">
+          <div class="header">
+            <img src="@img/card3-hand.webp" alt="img" class="hand">
+            <img src="@img/card1-board.svg" alt="img" class="board">
+          </div>
+          <div class="line_wrapper">
+          <div class="line _borderBottom">
+            <img src="@img/Diamond.svg" alt="img" class="diamond">
+            <p class="text">To purchase item by crypto you have to send money to this wallet. After 5 minute result 
+              will sent in your mail</p>
+          </div>
+          </div>
+          <div class="line_wrapper">
+          <div class="line _borderBottom">
+            <img src="@img/Diamond.svg" alt="img" class="diamond">
+            <p class="text">To purchase item by crypto you have to send money</p>
+          </div>
+          </div>
+          <div class="line_wrapper">
+          <div class="line _borderBottom">
+            <img src="@img/Diamond.svg" alt="img" class="diamond">
+            <p class="text">To purchase item by crypto you have to send money to this wallet. After 5 minute result will sent in your mail</p>
+          </div>
+          </div>
+          <div class="line_wrapper">
+          <div class="line _borderBottom  _noBorder">
+            <img src="@img/Diamond.svg" alt="img" class="diamond">
+            <p class="text">To purchase item by crypto you have to send money</p>
+          </div>
+          </div>
+          <div class="price_wrapper">
+            <a href="#" class="button">Сhoose</a>
+            <p class="text">$250.99</p>
+          </div>
+        </div>
+        <!------------------------------------------------------------------------------------------>
+      </div>
+      <img src="@img/fees-blur.svg" alt="img" class="blur">
+      <img src="@img/cube.webp" alt="img" class="cube">
+      <img src="@img/cube-blur.webp" alt="img" class="cube_blur">
+      <img src="@img/cube-right-fees.svg" alt="img" class="cube_right">
+      <img src="@img/star-fees.svg" alt="" class="star">
+      <div class="art"><img src="@img/MAKE ART.svg" alt="img"></div>
+      <div class="war"><img src="@img/NOT WAR.svg" alt="img"></div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------->
+    <div class="register_block">
+      <div class="container">
+        <h3 class="title">Register to be a designer</h3>
+        <div class="img_wrapper"><img src="@img/register-img.svg" alt="img"></div>
+        <form action="#" class="form">
+          <div class="item">
+            <label for="name" class="label">Name</label>
+            <input type="text" class="input" id="name" placeholder="Your name">
+          </div>
+          <div class="item">
+            <label for="email" class="label">Mail</label>
+            <input type="text" class="input" id="email" placeholder="Your mail">
+          </div>
+          <div class="item">
+            <label for="comment" class="label">Design preferences</label>
+            <input type="text" class="input _big" id="comment" placeholder="Your comment">
+          </div>
+          <div class="item">
+            <label for="comment" class="label">Choose your plan</label>
+            <div class="input_wrapper">
+             <div class="_smal"><a class="button">One week</a></div>
+             <div class="_smal"><a class="button">Individual</a></div>
+             <div class="_smal"><a class="button">One month</a></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
