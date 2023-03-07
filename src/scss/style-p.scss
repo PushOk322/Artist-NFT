@@ -193,7 +193,7 @@ body._lock {
     }
 
     &__blurred-img.first._active {
-        background: url(../img/first-blurred-img.png);
+        background: url(@img/first-blurred-img.png);
         transition: 0.5s;
         top: 137px;
         left: -379px;
