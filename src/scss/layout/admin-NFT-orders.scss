@@ -1,0 +1,304 @@
+@media(min-width: 1025px) and (max-width: 4000px) {
+   .item_order-mobile {
+      display: none;
+   }
+     ._NFT-order-list {
+        width: 100%;
+        height: 100%;
+        border-radius: 32px 0px 0px 0px;
+        background: #212426;
+        padding: 0px 31px 0px 15px;
+        display: flex;
+        flex-direction: column;
+        .header {
+        display: grid;
+        grid-template-columns: repeat(5,auto);
+        background: #212426;
+        padding: 25px 30px 20px 17px;
+        justify-content: flex-start;
+        border-radius: 14px 0px 0px 0px;
+        margin-bottom: -3px;
+        .mobile-title {
+            display: none;
+        }
+           .subtitle {
+            font-family: $proxiReg;
+            font-size: 14px;
+            line-height: 15px;
+            color: #FCFFFF;
+             &:first-child {
+                margin-right: 100px;
+             }
+             &:nth-child(2) {
+                margin-right: 296px;
+             }
+             &:nth-child(3) {
+                margin-right: 123px;
+             }
+             &:nth-child(4) {
+                margin-right: 112px;
+             }
+             &:nth-child(5) {
+                margin-right: 0px;
+             }
+             }
+        }
+        .item_order {
+            border-radius: 14px 0 0 0;
+            padding: 0 31px 0px 26px;
+            //grid-template-columns:  15.7% 31.31% 10.4% 6.97% 10%;
+            grid-template-columns: repeat(5,max-content);
+               //column-gap: 28px;
+               .product_wrapper {
+                display: flex;
+                align-items: center;
+                //column-gap: 19px;
+               margin-right: 48px;
+               .pic {
+                  margin-right: 19px;
+               }
+                   .text {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+                 }
+            .crypto_wrapper {
+                max-width: 310px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                column-gap: 27px;
+                padding: 14px 26px 14px 16px;
+                background: #212426;
+                border-radius: 13px;
+                margin-top: 10px;
+                margin-right: 28px;
+                .text {
+                    line-height: 21px;
+                }
+            }
+            .success {
+                width: 103px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: $proxiBold;
+                font-size: 16px;
+                line-height: 28px;
+                color: #C5FF98;
+                background: rgba(197, 255, 152, 0.1);
+                border-radius: 10px;
+                margin-right: 55px;
+                 }
+            .price {
+                font-family: $proxiBold;
+                font-size: 16px;
+                line-height: 28px;
+                color: #FCFFFF;
+                margin-right: 76px;
+                 }
+            .date {
+                font-family: $proxiReg;
+                font-size: 16px;
+                line-height: 28px;
+                color: #C8D2DC;
+                 }
+        }
+     }
+}
+@media(min-width: 280px) and (max-width: 1024px) {
+     ._NFT-order-list {
+        width: 100%;
+        height: 100%;
+        border-radius: 32px 0px 0px 0px;
+        background: #212426;
+        padding: 0px 15px 0px 15px;
+        display: flex;
+        flex-direction: column;
+        .header {
+        display: none;
+        grid-template-columns: repeat(5,auto);
+        background: #212426;
+        padding: 25px 30px 20px 17px;
+        justify-content: flex-start;
+        border-radius: 14px 0px 0px 0px;
+        margin-bottom: -3px;
+           .subtitle {
+            font-family: $proxiReg;
+            font-size: 14px;
+            line-height: 15px;
+            color: #FCFFFF;
+             &:first-child {
+                margin-right: 100px;
+             }
+             &:nth-child(2) {
+                margin-right: 296px;
+             }
+             &:nth-child(3) {
+                margin-right: 123px;
+             }
+             &:nth-child(4) {
+                margin-right: 112px;
+             }
+             &:nth-child(5) {
+                margin-right: 0px;
+             }
+             }
+        }
+        .item_order {
+         display: none;
+            border-radius: 14px 0 0 0;
+            padding: 19px 15px 17px 15px;
+            //grid-template-columns:  15.7% 31.31% 10.4% 6.97% 10%;
+            grid-template-columns: repeat(1,max-content);
+            grid-template-rows: repeat(4,max-content);
+               //column-gap: 28px;
+               .product_wrapper {
+                display: flex;
+                align-items: center;
+                //column-gap: 19px;
+               margin-right: 48px;
+               .pic {
+                  margin-right: 19px;
+               }
+                   .text {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+                 }
+            .crypto_wrapper {
+                max-width: 310px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                column-gap: 27px;
+                padding: 14px 26px 14px 16px;
+                background: #212426;
+                border-radius: 13px;
+                margin-top: 10px;
+                margin-right: 28px;
+                .text {
+                    line-height: 21px;
+                }
+            }
+            .success {
+                width: 103px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: $proxiBold;
+                font-size: 16px;
+                line-height: 28px;
+                color: #C5FF98;
+                background: rgba(197, 255, 152, 0.1);
+                border-radius: 10px;
+                margin-right: 55px;
+                 }
+            .price {
+                font-family: $proxiBold;
+                font-size: 16px;
+                line-height: 28px;
+                color: #FCFFFF;
+                margin-right: 76px;
+                 }
+            .date {
+                font-family: $proxiReg;
+                font-size: 16px;
+                line-height: 28px;
+                color: #C8D2DC;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                 }
+        }
+        .item_order-mobile {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         padding: 17px 15px 17px 18px;
+         margin-bottom: 10px;
+         background: #2C2F33;
+         border-radius: 14px;
+         .logo_info {
+            display: flex;
+            align-items: center;
+            column-gap: 14px;
+            border-bottom: 0.5px solid rgba(200, 210, 220, 0.3);
+            padding-bottom: 17px;
+             }
+         .text_wrapper {
+            width: 100%;
+            display: flex;
+               flex-direction: column;
+              .text {
+               font-family: $proxiSemi;
+               font-size: 16px;
+               line-height: 21px;
+               color: #FCFFFF;
+            }
+            .date {
+               font-family: $proxiReg;
+               font-size: 14px;
+               line-height: 22px;
+               color: #C8D2DC;
+            }
+         }
+         .line_wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 9px 11px 0;
+            border-bottom: 0.5px solid rgba(200, 210, 220, 0.3);
+            .text {
+               font-family: $proxiReg;
+               font-size: 14px;
+               line-height: 15px;
+               color: #FCFFFF;
+            }
+         .crypto_wrapper {
+            max-width: 148px;
+            height: 37px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: 8px;
+            background: #212426;
+            border-radius: 13px;
+            padding: 0 37px 0 11px;
+            .text {
+               font-family: $proxiBold;
+               font-size: 12px;
+               line-height: 20px;
+               color: #FCFFFF;
+            }
+         }
+         .price {
+            font-family: $proxiBold;
+            font-size: 16px;
+            line-height: 28px;
+            color: #FCFFFF;
+         }
+         &._border {
+            border-bottom: none;
+            padding-top: 8px;
+         }
+      }
+      .success {
+         width: 100%;
+         height: 40px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-family: $proxiBold;
+         font-size: 16px;
+         line-height: 28px;
+         color: #C5FF98;
+         background: rgba(197, 255, 152, 0.1);
+         border-radius: 10px;
+         margin-top: 7px;
+         padding-right: 4px;
+      }
+        }
+     }
+}

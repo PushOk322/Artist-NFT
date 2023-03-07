@@ -1,0 +1,54 @@
+@media(min-width: 1025px) and (max-width: 4000px) {
+    ._admin-workers-messages {
+        .sidebar {
+            padding: 50px 28px 14px 36px;
+            .sidebar_footer {
+                margin-left: 0;
+            }
+        }
+        .user {
+            position: relative;
+        }
+        .user::before {
+            content: url('@img/star-active.svg');
+            position: absolute;
+            left: -15px;
+            top: 48%;
+            transform: translateY(-50%);
+             visibility: hidden;
+        }
+        .user:hover::before {
+            visibility: visible;
+        }
+        .user:hover {
+            background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+          }
+    }
+}
+@media(min-width: 280px) and (max-width: 1024px) {
+    ._admin-workers-messages {
+        .sidebar {
+            padding: 0px 0px 0px 0px;
+            .sidebar_footer {
+                margin-left: 0;
+            }
+        }
+        .user {
+            position: relative;
+        }
+        .user::before {
+            content: url('@img/star-active.svg');
+            position: absolute;
+            left: -15px;
+            top: 48%;
+            transform: translateY(-50%);
+             visibility: hidden;
+        }
+        .user:hover::before {
+            visibility: visible;
+        }
+        .user:hover {
+            background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+          }
+    }
+}

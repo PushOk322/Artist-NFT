@@ -1,0 +1,528 @@
+@media(min-width: 1025px) and (max-width: 4000px) {
+    .school_wrapper {
+        width: 100%;
+        height: 100%;
+        background: #1D1F21;
+        overflow-x: hidden;
+       
+        .registration_block {
+            width: 76.8%;
+            height: auto;
+            margin: 0 auto;
+             display: grid;
+             grid-template-columns: 41.06% 1fr;
+             column-gap: 30px;
+             position: relative;
+             padding-top: 24px;
+             .register_form {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-top: 149px;
+                .title {
+                    font-family: $proxiBold;
+                    font-size: 64px;
+                    line-height: 65px;
+                    color: #FCFFFF;
+                    margin-bottom: 16px;
+                }
+                .text {
+                    font-family: $proxiReg;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #FCFFFF;
+                    margin-bottom: 40px;
+                    max-width: 63%;
+                }
+                .link {
+                    max-width: 209px;
+                    width: 100%;
+                    height: 64px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: $proxiBold;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #1D1F21;
+                    background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+                    border-radius: 16px;
+                }
+             }
+             .img_wrapper {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: relative;
+                .imgBg {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .img {
+                    position: absolute;
+                    top: 15.7%;
+                    left: -18%;
+                }
+                .star-left {
+                    position: absolute;
+                    left: -2%;
+                    bottom: 13.5%;
+                }
+                .star-right {
+                    position: absolute;
+                    top: 46%;
+                    right: -9%;
+                }
+             }
+             .word_left {
+                position: absolute;
+                left: -166px;
+                top: 18.8%
+             }
+             .word_bottom {
+                position: absolute;
+                bottom: -34%;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-left: -3px;
+             }
+        }
+        .benefits_block {
+            width: 76.38%;
+            margin: 239px auto 110px;
+            transform: translateX(-1%);
+            display: grid;
+            grid-template-columns: repeat(4,23.18%);
+            grid-template-rows: repeat(2,max-content);
+            column-gap: 30px;
+            .header {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                margin-bottom: 39px;
+                .text {
+                    font-family: $proxiBold;
+                    font-size: 36px;
+                    line-height: 50px;
+                    color: #FCFFFF;
+                        &._color {
+                        font-size: 18px;
+                        line-height: 26px;
+                        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        letter-spacing: 0.1em;
+                         }
+                }
+            }
+            .item {
+                width: 100%;
+                min-height: 254px;
+                max-height: auto;
+                display: flex;
+                flex-direction: column;
+                background: #212426;
+                border-radius: 12px;
+                padding: 18px 17px 0 19px;
+                .img {
+                    margin-bottom: 9px;
+                }
+                .title {
+                    font-family: $proxiBold;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #FCFFFF;
+                    margin-bottom: 5px;
+                }
+                .text {
+                    font-family: $proxiReg;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #FCFFFF;
+                }
+            }
+        }
+        .school_fees-block {
+            width: 100%;
+            height: auto;
+            position: relative;
+                .blur {
+                position: absolute;
+                left: 0;
+                top: 1%;
+                opacity: 0.7;
+                filter: blur(124.532px);
+                transform: rotate(-180deg);
+            }
+            .cube {
+                position: absolute;
+                left: 0;
+                top: 1.8%;
+            }
+            .cube_blur {
+                position: absolute;
+                right: 19%;
+                top: -6.9%;
+                opacity: 0.7;
+                filter: blur(6px);
+                transform: rotate(-3.92deg);
+            }
+            .cube_right {
+                position: absolute;
+                right: 0%;
+                top: 6%;
+            }
+            .star {
+                position: absolute;
+                top: -6%;
+                left: 27%;
+            }
+            .art {
+                position: absolute;
+                left: 0%;
+                top: 0%;
+                }
+               .war {
+                position: absolute;
+                right: 0%;
+                top: 0%;
+            }
+            .school_fees-container {
+                width: 77.08%;
+                height: 100%;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(3,31.72%);
+                grid-template-rows: repeat(2,max-content);
+                column-gap: 30px;
+                justify-content: center;
+                .header {
+                    display: flex;
+                    flex-direction: column;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                    align-items: center;
+                    margin-bottom: 53px;
+                    .title {
+                    font-family: $proxiBold;
+                    font-size: 36px;
+                    line-height: 50px;
+                    color: #FCFFFF;
+                    margin-bottom: 16px;
+                    }
+                    .text {
+                    font-family: $proxiReg;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #FCFFFF;
+                    margin-bottom: 16px;
+                    max-width: 40%;
+                    text-align: center;
+                    }
+                }
+                .card {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 35px 0px 14px 0;
+                    background: #212426;
+                    border-radius: 12px;
+                    align-items: center;
+                    position: relative;
+                    margin-left: 5px;
+                   .blur-card {
+                    position: absolute;
+                    top: 0%;
+                    left: 3%;
+                   }
+                    &._card1 {
+                    margin-top: 58px;
+                    }
+                   .img_wrapper {
+                    width: 100%;
+                    display: flex;
+                     justify-content: center;
+                    }
+                   .blur {
+                    z-index: 2;
+                  }
+                   .header {
+                    width: 347px;
+                    height: 164px;
+                    display: flex;
+                    align-items: flex-end;
+                    position: relative;
+                    margin-top: -16px;
+                    margin-bottom: 16px;
+                    z-index: 0;
+                    background: transparent;
+                    & img {
+                       max-width: 100%;
+                       max-height: 100%;
+                        object-fit: cover;
+                    }
+                    .hand {
+                        position: absolute;
+                        left: -3px;
+                        bottom: -10px
+                        }
+                        .board {
+                        width: 275px;
+                        max-width: 100%;
+                        object-fit: cover;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        }
+                    }
+                    .line_wrapper {
+                    width: 100%;
+                    padding: 0px 30px 0px 27px;
+                    .line {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        column-gap: 16px;
+                        padding: 10px 0px 10px 0px;
+                        &._borderBottom {
+                            border-bottom: 1px solid rgba(82, 89, 96, 1);
+                            &._noBorder {
+                                border-bottom: none;
+                                margin-bottom: 33px;
+                            }
+                        }
+                        .text {
+                    font-family: $proxiReg;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #C8D2DC;
+                    max-width: 82%;
+                        }
+                    }
+                    }
+                    .price_wrapper {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 24px;
+                    align-self: flex-start;
+                    padding: 0 37px 0 26px;
+                    max-width: 100%;
+                    .button {
+                        width: 177px;
+                        height: 56px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: $proxiBold;
+                        font-size: 18px;
+                        line-height: 26px;
+                        color:  #1D1F21;
+                        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+                        border-radius: 12px;
+                         }
+                         .text {
+                        font-family: $proxiBold;
+                        font-size: 22px;
+                        line-height: 34px;
+                        color: #FCFFFF;
+                         }
+                    }
+                  }
+                ._card2 {
+                  //  border: 5px solid;
+                  //  border-image: linear-gradient(94.78deg, #00ADC5 9.27%, #AD7AFF 84.06%) 1;
+                    border-radius: 22px;
+                   // border-image: linear-gradient(94.78deg, #00ADC5 9.27%, #AD7AFF 84.06%) 1;
+                    //background-origin: border-box;
+                  //  background-clip: content-box, border-box;
+                    max-height: 660px;
+                    position: relative;
+                    margin-top: 15px;
+                    padding-bottom: 0px;
+                    box-sizing: border-box;
+                   .header {
+                    margin-bottom: 27px;
+                    .hand {
+                        left: 55px;
+                        bottom: -5px;
+                    }
+                    .board {
+                        bottom: -10px;
+                    }
+                   }
+                   .price_wrapper {
+                    min-height: 120px;
+                    height: auto;
+                    margin-top: 20px;
+                    background-image: url('@img/card2-bottomBg.webp');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    width: 100%;
+                    z-index: 5;
+                    border-radius: 0 0 12px 12px;
+                    position: relative;
+                    .button {
+                    background: rgba(29, 31, 33, 1);
+                    z-index: 9;
+                        span {
+                        background: linear-gradient(94.78deg, #31FFF3 9.27%, #AD7AFF 84.06%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        //text-fill-color: transparent;
+                     }                
+                    }
+                        .text {
+                        z-index: 10;
+                    }
+                  }
+                  .line_wrapper {
+                        .line {
+                            &._borderBottom {
+                            &._noBorder {
+                                margin-bottom: -10px;
+                            }
+                            }
+                        }
+                  }
+                }
+                ._card2::before {
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    border-radius: 22px;
+                    padding: 10px; /* control the border thickness */
+                    //background: linear-gradient(94.78deg, #00ADC5 9.27%, #AD7AFF 84.06%) 1;
+                    background: linear-gradient(94.78deg, #00ADC5 9.27%, #AD7AFF 84.06%);
+                    -webkit-mask: 
+                    linear-gradient(#fff 0 0) content-box, 
+                    linear-gradient(#fff 0 0);
+                  -webkit-mask-composite: xor;
+                          mask-composite: exclude;
+                  pointer-events: none;
+               }
+               ._card3 {
+                height: 100%;
+                max-height: 650px;
+                margin-top: 58px;
+                .header {
+                    .hand {
+                        left: 63px;
+                        bottom: 1px;
+                    }
+                }
+                .line_wrapper * {
+                padding-top: 0px;
+                }
+               }
+            }
+        }
+        //register-block----------------------------------------------------------------------
+        .register_block {
+            width: 100%;
+            height: auto;
+            position: relative;
+            margin-top: 69px;
+            .container {
+                max-width: 30.97%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .title {
+                    font-family: $proxiBold;
+                    font-size: 36px;
+                    line-height: 50px;
+                    color: #FCFFFF;
+                    margin-bottom: 7px;
+                    text-align: center;
+                }
+                .img_wrapper img{
+                    object-fit: cover;
+                    margin-bottom: 20px;
+                }
+                .form {
+                    width: 92.3%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    row-gap: 8px;
+                    .item {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        .label {
+                    font-family: $proxiReg;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #C8D2DC;
+                    margin-bottom: 7px;
+                        }
+                        .input {
+                            width: 100%;
+                            height: 64px;
+                            background: #212426;
+                            border-radius: 9px;
+                            padding-left: 35px;
+                            &._big {
+                                height: 120px;
+                                 padding-bottom: 78px;
+                            }
+                          }
+                          .input::placeholder {
+                            font-family: $proxiReg;
+                            font-size: 16px;
+                            line-height: 21px;
+                            color: #C8D2DC;
+                            opacity: 0.6;
+                          }
+                        .input_wrapper {
+                            display: flex;
+                            align-items: center;
+                            column-gap: 23px;
+                            ._smal {
+                                width: 29.26%;
+                                height: 64px;
+                                padding: 0;
+                                text-align: center;
+                                background: #212426;
+                                border-radius: 9px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                font-family: $proxiBold;
+                                font-size: 18px;
+                                line-height: 26px;
+                                &:hover {
+                                  background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+                                }
+                               .button {
+                                font-family: $proxiBold;
+                                font-size: 18px;
+                                line-height: 26px;
+                                background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+                                -webkit-background-clip: text;
+                               // -webkit-text-fill-color: transparent;
+                                // background-clip: text;
+                                //text-fill-color: transparent;
+                                &:hover {
+                                   color: black;
+                                }
+                             }
+                              }
+                     }
+                }
+            }
+        }
+    }
+}
+}
+
+
