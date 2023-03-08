@@ -1,0 +1,646 @@
+.pricing-page-header {
+    width: 100%;
+}
+
+
+.pricing-page-main {
+    width: 100%;
+    background: #1D1F21;
+    display: flex;
+    justify-content: center;
+
+    &__wrapper {
+        width: 100%;
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+        position: relative;
+    }
+
+    &__blurred-img {
+        opacity: 0.7;
+        filter: blur(124.532px);
+        width: 100%;
+        max-width: 758px;
+        height: 699.04px;
+        position: absolute;
+        z-index: -1;
+        background: #86a8ff63;
+    }
+
+    &__blurred-img.first._active {
+        background: url(../img/third-blurred-img.png);
+        transition: 0.5s;
+        top: -20px;
+        left: -555px;
+    }
+
+
+    &__blurred-img.third._active {
+        background: url(../img/first-blurred-img.png);
+        transition: 0.5s;
+        top: -20px;
+        right: -242px;
+    }
+
+
+    &__diamond {
+        width: 100%;
+        position: absolute;
+    }
+
+    &__diamond.first._active {
+        background-image: url(../img/purple-diamond.png);
+        top: 117px;
+        left: -156px;
+        width: 340px;
+        height: 340px;
+
+    }
+
+    &__diamond.second._active {
+        background-image: url(../img/big-violet-diamond.png);
+        top: 50px;
+        right: 305px;
+        width: 145px;
+        height: 145px;
+        filter: blur(6px);
+    }
+
+    &__diamond.third._active {
+        background-image: url(../img/strange-diamond.png);
+        top: 203px;
+        right: -83px;
+        width: 267px;
+        height: 173px;
+        filter: blur(3.5px);
+        transform: rotate(24.52deg);
+    }
+
+
+    &__make-art {
+        position: absolute;
+        z-index: 3;
+        top: 84px;
+        left: -33px;
+        width: 387px;
+        height: 97px;
+    }
+
+    &__not-war {
+        position: absolute;
+        z-index: -1;
+        top: 84px;
+        right: -26px;
+        width: 356px;
+        height: 97px;
+    }
+
+    &__circle {
+        position: absolute;
+        z-index: 3;
+    }
+
+    &__circle.first {
+        top: 194px;
+        right: 351px;
+        width: 25px;
+        height: 25px;
+    }
+
+    &__star {
+        position: absolute;
+        z-index: 3;
+    }
+
+    &__star.first {
+        top: 49px;
+        left: 391px;
+        width: 46px;
+        height: 62px;
+    }
+}
+
+.pricing-static {
+    margin: 62px 0 0 3px;
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    &__title {
+        max-width: 569px;
+        font-family: 'Proxima-700';
+        font-size: 64px;
+        line-height: 65px;
+        text-align: center;
+        color: #FCFFFF;
+    }
+
+    &__text {
+        max-width: 415px;
+        font-family: 'Proxima-400';
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color: #FCFFFF;
+    }
+}
+
+
+.subs-buttons {
+    display: none;
+
+    &__button {}
+}
+
+.subs {
+    margin: 79px 0 0 15px;
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 20px 0 9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 12px;
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 650px;
+
+        &.week {
+            order: 1;
+        }
+
+        &.year {
+            margin-top: -45px;
+            order: 2;
+            border-radius: 12px;
+            background: linear-gradient(94.78deg, #31FFF3 9.27%, #AD7AFF 84.06%);
+            width: 360px;
+            height: 660px;
+            padding: 5px 5px 0 5px;
+        }
+
+        &.month {
+            order: 3;
+        }
+    }
+
+
+    &__container {
+        position: relative;
+        background: #212426;
+        border-radius: 12px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__inscription {
+        margin-right: 1px;
+        position: absolute;
+        top: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &.week._active {
+            background: url(../img/one-week-img.png) no-repeat;
+            width: 271px;
+            height: 97px;
+        }
+
+        &.year._active {
+            background: url(../img/one-year-img.png) no-repeat;
+            width: 205px;
+            height: 97px;
+        }
+
+        &.month._active {
+            background: url(../img/one-month-img.png) no-repeat;
+            width: 293px;
+            height: 97px;
+        }
+    }
+
+    &__crystal {
+        z-index: 3;
+        position: absolute;
+
+        &.week._active {
+            background: url(../img/glass-crystal.png) no-repeat;
+            width: 97px;
+            height: 137px;
+            top: 45px;
+            left: 46px;
+        }
+
+        &.year._active {
+            background: url(../img/diamond-crystal.png) no-repeat;
+            width: 130px;
+            height: 167px;
+            top: 25px;
+            left: 27px;
+        }
+
+        &.month._active {
+            background: url(../img/adamantite-crystal.png) no-repeat;
+            width: 141px;
+            height: 157px;
+            top: 41px;
+            left: 24px;
+        }
+    }
+
+    &__blur {
+        position: absolute;
+        z-index: 1;
+        width: 230px;
+        height: 157px;
+        left: -27px;
+        top: 41px;
+        filter: blur(33px);
+
+        &.week {
+            background: radial-gradient(50% 50% at 50% 50%, #35CFFF 0%, rgba(28, 54, 63, 0) 100%);
+        }
+
+        &.year {
+            background: radial-gradient(50% 50% at 50% 50%, #4E95F5 0%, rgba(28, 54, 63, 0) 100%);
+        }
+
+        &.month {
+            background: radial-gradient(50% 50% at 50% 50%, #6D37FF 0%, rgba(28, 54, 63, 0) 100%);
+        }
+    }
+
+    &__title-block {
+        margin: 153px 0 0 0;
+
+        display: flex;
+        flex-direction: column;
+        width: 275px;
+        height: 80px;
+        align-self: flex-end;
+        z-index: 5;
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        border-radius: 8px 0px 0px 8px;
+
+        &.year {
+            background: linear-gradient(94.78deg, #00ADC5 9.27%, #AD7AFF 84.06%)
+        }
+    }
+
+    &__title {
+        margin: 15px 0 0 24.5px;
+        font-family: 'Proxima-700';
+        font-size: 26px;
+        line-height: 34px;
+        color: #1D1F21;
+
+        &.year {
+            color: #FCFFFF;
+        }
+    }
+
+    &__undertitle {
+        margin: -4px 0 0 -36.5px;
+        font-family: 'Proxima-400';
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #1D1F21;
+        opacity: 0.7;
+
+        &.year {
+            color: #FCFFFF;
+        }
+    }
+
+    &__benefits {
+        margin: 27.5px 0 31px 27px;
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    &__text-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__diamond-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__text {
+        max-width: 226px;
+        font-family: 'Proxima-400';
+        font-size: 14px;
+        line-height: 21px;
+        color: #C8D2DC;
+    }
+
+    &__line {
+        width: 293px;
+        border: 1px solid #525960;
+    }
+
+    &__price-container {
+        margin: 14px 0 18px 26px;
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    &__button {
+        width: 177px;
+        height: 56px;
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        border-radius: 12px;
+        padding: 15px 0 0 51px;
+        font-family: 'Proxima-700';
+        font-size: 18px;
+        line-height: 26px;
+        color: #1D1F21;
+
+        &.year {
+            background: #1D1F21;
+            border-radius: 12px;
+
+            span {
+                background: linear-gradient(94.78deg, #31FFF3 9.27%, #AD7AFF 84.06%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        }
+    }
+
+    &__price {
+        margin: 11px 0 0 0;
+        font-family: 'Proxima-700';
+        font-size: 22px;
+        line-height: 34px;
+        color: #FCFFFF;
+    }
+}
+
+.main-page-footer {
+    margin: 49px 0 0 0.5px;
+    width: 100%;
+
+}
+
+
+
+
+@media(max-width: 1025px) {
+    .pricing-page-main {
+        width: 100%;
+        background: #1D1F21;
+        display: flex;
+        justify-content: center;
+
+        &__wrapper {
+            width: 100%;
+            max-width: 1440px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 2;
+            position: relative;
+        }
+
+        &__blurred-img {
+            opacity: 0.7;
+            filter: blur(79.0974px);
+            width: 100%;
+            max-width: 480px;
+            height: 444px;
+            position: absolute;
+            z-index: -1;
+            background: #86a8ff63;
+        }
+
+        &__blurred-img.first._active {
+            background: url(../img/first-blurred-img.png);
+            transition: 0.5s;
+            top: -30px;
+            left: auto;
+            right: -226px;
+            transform: rotate(-90deg);
+        }
+
+
+        &__blurred-img.third._active {
+            display: none;
+        }
+
+
+        &__diamond {
+            width: 100%;
+            position: absolute;
+        }
+
+        &__diamond.first._active {
+            display: none;
+
+        }
+
+        &__diamond.second._active {
+            display: none;
+        }
+
+        &__diamond.third._active {
+            background-image: url(../img/strange-diamond.png);
+            background-size: 74.74px 48.43px;
+            top: 95px;
+            right: -25px;
+            width: 74.74px;
+            height: 48.43px;
+            filter: blur(3.5px);
+            transform: rotate(24.52deg);
+        }
+
+
+        &__make-art {
+            display: none;
+        }
+
+        &__not-war {
+            display: none;
+        }
+
+        &__circle {
+            position: absolute;
+            z-index: 3;
+        }
+
+        &__circle.first {
+            top: 155px;
+            right: 34px;
+            width: 25px;
+            height: 25px;
+        }
+
+        &__star {
+            position: absolute;
+            z-index: 3;
+        }
+
+        &__star.first {
+            top: 14px;
+            left: 329px;
+            width: 46px;
+            height: 62px;
+        }
+    }
+
+}
+
+@media(max-width: 800px) {}
+
+@media(max-width: 376px) {
+    .pricing-page-main {
+        width: 100%;
+        background: #1D1F21;
+        display: flex;
+        justify-content: center;
+
+        &__wrapper {
+            width: 100%;
+            max-width: 1440px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 2;
+            position: relative;
+        }
+
+        &__blurred-img {
+            opacity: 0.7;
+            filter: blur(79.0974px);
+            width: 100%;
+            max-width: 480px;
+            height: 444px;
+            position: absolute;
+            z-index: -1;
+            background: #86a8ff63;
+        }
+
+        &__blurred-img.first._active {
+            background: url(../img/first-blurred-img.png);
+            transition: 0.5s;
+            top: -30px;
+            left: auto;
+            right: -226px;
+            transform: rotate(-90deg);
+        }
+
+
+        &__blurred-img.third._active {
+            display: none;
+        }
+
+
+        &__diamond {
+            width: 100%;
+            position: absolute;
+        }
+
+        &__diamond.first._active {
+            display: none;
+
+        }
+
+        &__diamond.second._active {
+            display: none;
+        }
+
+        &__diamond.third._active {
+            background-image: url(../img/strange-diamond.png);
+            background-size: 74.74px 48.43px;
+            top: 95px;
+            right: -25px;
+            width: 74.74px;
+            height: 48.43px;
+            filter: blur(3.5px);
+            transform: rotate(24.52deg);
+        }
+
+
+        &__make-art {
+            display: none;
+        }
+
+        &__not-war {
+            display: none;
+        }
+
+        &__circle {
+            position: absolute;
+            z-index: 3;
+        }
+
+        &__circle.first {
+            top: 155px;
+            right: 34px;
+            width: 25px;
+            height: 25px;
+        }
+
+        &__star {
+            position: absolute;
+            z-index: 3;
+        }
+
+        &__star.first {
+            top: 14px;
+            left: 329px;
+            width: 46px;
+            height: 62px;
+        }
+    }
+
+    .pricing-static {
+        margin: 36px 0 0 30px;
+        width: 100%;
+        max-width: 1140px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+
+        &__title {
+            margin-left: 3px;
+            max-width: 271px;
+            font-family: 'Proxima-700';
+            font-size: 36px;
+            line-height: 40px;
+            text-align: left;
+            color: #FCFFFF;
+        }
+
+        &__text {
+            max-width: 277px;
+            font-family: 'Proxima-400';
+            font-size: 15px;
+            line-height: 24px;
+            text-align: left;
+            color: #FCFFFF;
+        }
+    }
+
+
+}
