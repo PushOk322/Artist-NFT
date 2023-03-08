@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="webp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <script defer src="js/app-p-min.js"></script>
+
+    <link defer rel="stylesheet" href="css/style-p.css">
+    <title>Auction-page</title>
+</head>
+
+<body>
+
+    <div class="page-definer index">
+    </div>
+
+    <section class="payment-page-header">
+        @@include('html/header.html')
+    </section>
+
+    <section class="popup">
+        <div class="popup__container">
+            <div class="popup__title">Payment success. Now tell us where to bring</div>
+            <div class="popup__text">Write correct country, adress, zip code</div>
+            <div class="popup__form">
+                <div class="popup__block">
+                    <div class="popup__label">Country</div>
+                    <input type="text" class="popup__input" placeholder="Your country">
+                </div>
+                <div class="popup__block">
+                    <div class="popup__label">City</div>
+                    <input type="text" class="popup__input" placeholder="Your city">
+                </div>
+                <div class="popup__block">
+                    <div class="popup__label">Adress</div>
+                    <input type="text" class="popup__input" placeholder="Your adress">
+                </div>
+                <div class="popup__block">
+                    <div class="popup__label">Zip code</div>
+                    <input type="text" class="popup__input" placeholder="Your zip code">
+                </div>
+                <div class="popup__block">
+                    <div class="popup__label">Mail</div>
+                    <input type="text" class="popup__input" placeholder="Your mail">
+                </div>
+                <div class="popup__button popup-off">
+                    Send
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="payment-page-main">
+        <div class="payment-page-main__wrapper">
+
+            <section class="payment">
+                <div class="payment__main">
+                    <div class="payment__purchase-word">PURCHASE</div>
+                    <div class="payment__title">Payment for <span>Name of NFT or art</span></div>
+
+                    <div class="payment__buttons">
+                        <div class="payment__button active">Credit card</div>
+                        <div class="payment__button">PayPal</div>
+                        <div class="payment__button">Crypto</div>
+                    </div>
+
+                    <div class="payment__navs-container">
+                        <form class="payment__nav-part active">
+                            <div class="payment__row">
+                                <div class="payment__input-block">
+                                    <div class="payment__label">Card number</div>
+                                    <input placeholder="0000 0000 0000 0000" id="ccn" type="tel" inputmode="numeric"
+                                        pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19"
+                                        class="payment__input">
+                                </div>
+                            </div>
+                            <div class="payment__row">
+                                <div id="date" class="payment__input-block">
+                                    <div class="payment__label">Date</div>
+                                    <input placeholder="01/01" type="tel" class="payment__input">
+                                </div>
+                                <div class="payment__input-block">
+                                    <div class="payment__label">CCV</div>
+                                    <input placeholder="000" type="tel" maxlength="3" class="payment__input">
+                                </div>
+                            </div>
+                            <div class="payment__row">
+                                <div class="payment__input-block">
+                                    <div class="payment__label">Name on card</div>
+                                    <input placeholder="Ivan Ivanov" type="text" class="payment__input">
+                                </div>
+                            </div>
+                            <div class="payment__purchase-button popup-button">Purchase</div>
+                            <div id="agree-checkbox-payment" class="contact-form__agreement">
+                                <div class="contact-form__checkbox checkbox"></div>
+                                I agree with
+                                <span>Privacy Policy</span>
+                                and
+                                <span>Terms of use</span>
+                            </div>
+                        </form>
+
+                        <form class="payment__nav-part">
+                            <div class="payment__row">
+                                <div class="payment__input-block">
+                                    <div class="payment__label">Card number</div>
+                                    <input placeholder="0000 0000 0000 0000" id="ccn" type="tel" inputmode="numeric"
+                                        pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19"
+                                        class="payment__input">
+                                </div>
+                            </div>
+                            <div class="payment__row">
+                                <div id="date" class="payment__input-block">
+                                    <div class="payment__label">Date</div>
+                                    <input placeholder="01/01" type="tel" class="payment__input">
+                                </div>
+                                <div class="payment__input-block">
+                                    <div class="payment__label">CCV</div>
+                                    <input placeholder="000" type="tel" maxlength="3" class="payment__input">
+                                </div>
+                            </div>
+                            <div class="payment__row">
+                                <div class="payment__input-block">
+                                    <div class="payment__label">Name on card</div>
+                                    <input placeholder="Ivan Ivanov" type="text" class="payment__input">
+                                </div>
+                            </div>
+                            <div class="payment__purchase-button popup-button">Purchase</div>
+                            <div id="agree-checkbox-payment" class="contact-form__agreement">
+                                <div class="contact-form__checkbox checkbox"></div>
+                                I agree with
+                                <span>Privacy Policy</span>
+                                and
+                                <span>Terms of use</span>
+                            </div>
+                        </form>
+
+                        <form class="payment__nav-part">
+                            <div class="payment__crypto-descrition">To purchase item by crypto you have to send money to
+                                this <br> wallet. After 5 minute result will sent in your mail</div>
+                            <div class="payment__copy-block">
+                                <div class="payment__copy-item">EQBSSl0Xlo3...kkHTmFw5YVYOiWJ.</div>
+                                <img src="@img/copy-icon.svg" alt="" class="payment__copy-icon">
+                            </div>
+                            <div class="payment__row">
+                                <div class="payment__input-block">
+                                    <div class="payment__label">Email</div>
+                                    <input placeholder="Your e-mail" type="text" class="payment__input">
+                                </div>
+                            </div>
+                            <div class="payment__purchase-button popup-button">Purchase</div>
+                            <div id="agree-checkbox-payment" class="contact-form__agreement">
+                                <div class="contact-form__checkbox checkbox"></div>
+                                I agree with
+                                <span>Privacy Policy</span>
+                                and
+                                <span>Terms of use</span>
+                            </div>
+                        </form>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="payment__card">
+                    <div class="payment__card-title">Name of NFT or Art placed here</div>
+                    <div class="payment__card-price-container">
+                        <div class="payment__price-block">
+                            <div class="payment__price-word">
+                                PRICE
+                            </div>
+                            <div class="payment__price-number">$100 322</div>
+                        </div>
+                        <div class="payment__bid">BID</div>
+                    </div>
+                    <div class="payment__card-horizontal-line"></div>
+                    <div class="payment__info-title">DETAILED INFO</div>
+                    <div class="payment__info">
+                        <div class="payment__info-item">
+                            36 × 27 in <br>
+                            91.4 × 68.6 cm
+                        </div>
+                        <div class="payment__info-line"></div>
+                        <div class="payment__info-item">
+                            This work is part of a <br> limited edition set.
+                        </div>
+                    </div>
+                    <div class="payment__text">Kindness to he horrible reserved ye. Effect twenty indeed beyond for not
+                        had county. The use
+                        him without greatly can
+                        private. Increasing it unpleasant no of contrasted no continuing. Nothing colonel my no removed
+                        in weather. It
+                        dissimilar in up devonshire inhabiting.
+
+                    </div>
+                    <div class="payment__text second">If polite he active county in spirit an. Mrs ham intention
+                        promotion engrossed
+                        assurance defective.</div>
+                </div>
+
+            </section>
+
+
+            <section class="payment-page-footer">
+                @@include('html/footer.html')
+            </section>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
