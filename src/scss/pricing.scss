@@ -396,7 +396,7 @@
     }
 }
 
-.main-page-footer {
+.pricing-page-footer {
     margin: 49px 0 0 0.5px;
     width: 100%;
 
@@ -507,11 +507,307 @@
         }
     }
 
+
+    .subs-buttons {
+        margin: 14px 0 0 0;
+        padding: 7px 0 0 8px;
+        display: flex;
+        flex-direction: row;
+        width: 345px;
+        height: 62px;
+        background: #212426;
+        border-radius: 12px;
+
+        &__button {
+            width: 111px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Proxima-400';
+            font-size: 14px;
+            line-height: 21px;
+            color: #FFFFFF;
+            background: transparent;
+            transition: 0.3s;
+
+            &.active {
+                font-family: 'Proxima-700';
+                font-size: 14px;
+                line-height: 20px;
+                color: #1D1F21;
+                background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+                border-radius: 12px;
+                transition: 0.3s;
+                padding: 0 7px 0 0;
+            }
+        }
+    }
+
+    .subs {
+        margin: 14px 0 0 0px;
+        width: 100%;
+        max-width: 1140px;
+        padding: 0 0px 0 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-radius: 12px;
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            visibility: hidden;
+            opacity: 0;
+            width: 0px;
+            height: 650px;
+
+            &.active {
+                width: 345px;
+                height: 650px;
+                visibility: visible;
+                opacity: 1;
+                transition: 0.3s;
+            }
+
+            &.week {
+                order: 1;
+            }
+
+            &.year {
+                margin-top: 0;
+                order: 3;
+                border-radius: 12px;
+                background: linear-gradient(94.78deg, #31FFF3 9.27%, #AD7AFF 84.06%);
+                width: 0px;
+                height: 0px;
+                padding: 0;
+
+                &.active {
+                    width: 355px;
+                    height: 660px;
+                    padding: 5px 5px 0 5px;
+                }
+            }
+
+            &.month {
+                order: 2;
+            }
+        }
+
+
+        &__container {
+            position: relative;
+            background: #212426;
+            border-radius: 12px;
+            width: 345px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__inscription {
+            margin-right: 1px;
+            position: absolute;
+            top: 13px;
+            left: 50.5%;
+            transform: translateX(-50%);
+
+            &.week._active {
+                background: url(../img/one-week-img.png) no-repeat;
+                width: 271px;
+                height: 97px;
+            }
+
+            &.year._active {
+                background: url(../img/one-year-img.png) no-repeat;
+                width: 205px;
+                height: 97px;
+            }
+
+            &.month._active {
+                background: url(../img/one-month-img.png) no-repeat;
+                width: 293px;
+                height: 97px;
+            }
+        }
+
+        &__crystal {
+            z-index: 3;
+            position: absolute;
+
+            &.week._active {
+                background: url(../img/glass-crystal.png) no-repeat;
+                width: 97px;
+                height: 137px;
+                top: 46px;
+                left: 45px;
+            }
+
+            &.year._active {
+                background: url(../img/diamond-crystal.png) no-repeat;
+                width: 130px;
+                height: 167px;
+                top: 25px;
+                left: 27px;
+            }
+
+            &.month._active {
+                background: url(../img/adamantite-crystal.png) no-repeat;
+                width: 141px;
+                height: 157px;
+                top: 41px;
+                left: 24px;
+            }
+        }
+
+        &__blur {
+            position: absolute;
+            z-index: 1;
+            width: 200px;
+            height: 137px;
+            left: -5px;
+            top: 51px;
+            filter: blur(33px);
+
+            &.week {
+                background: radial-gradient(50% 50% at 50% 50%, #35CFFF 0%, rgba(28, 54, 63, 0) 100%);
+            }
+
+            &.year {
+                background: radial-gradient(50% 50% at 50% 50%, #4E95F5 0%, rgba(28, 54, 63, 0) 100%);
+            }
+
+            &.month {
+                background: radial-gradient(50% 50% at 50% 50%, #6D37FF 0%, rgba(28, 54, 63, 0) 100%);
+            }
+        }
+
+        &__title-block {
+            margin: 154px 0 0 0;
+
+            display: flex;
+            flex-direction: column;
+            width: 270px;
+            height: 80px;
+            align-self: flex-end;
+            z-index: 5;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: 8px 0px 0px 8px;
+
+            &.year {
+                background: linear-gradient(94.78deg, #00ADC5 9.27%, #AD7AFF 84.06%)
+            }
+        }
+
+        &__title {
+            margin: 14px 0 0 24.5px;
+            font-family: 'Proxima-700';
+            font-size: 26px;
+            line-height: 34px;
+            color: #1D1F21;
+
+            &.year {
+                color: #FCFFFF;
+            }
+        }
+
+        &__undertitle {
+            margin: -4px 0 0 -31px;
+            font-family: 'Proxima-400';
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            color: #1D1F21;
+            opacity: 0.7;
+
+            &.year {
+                color: #FCFFFF;
+            }
+        }
+
+        &__benefits {
+            margin: 26.5px 0 31px 27px;
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+        }
+
+        &__text-block {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 16px;
+        }
+
+        &__diamond-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        &__text {
+            max-width: 226px;
+            font-family: 'Proxima-400';
+            font-size: 14px;
+            line-height: 21px;
+            color: #C8D2DC;
+        }
+
+        &__line {
+            width: 293px;
+            border: 1px solid #525960;
+        }
+
+        &__price-container {
+            margin: 14px 0 18px 26px;
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+        }
+
+        &__button {
+            width: 177px;
+            height: 56px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: 12px;
+            padding: 14px 0 0 51px;
+            font-family: 'Proxima-700';
+            font-size: 18px;
+            line-height: 26px;
+            color: #1D1F21;
+
+            &.year {
+                background: #1D1F21;
+                border-radius: 12px;
+
+                span {
+                    background: linear-gradient(94.78deg, #31FFF3 9.27%, #AD7AFF 84.06%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                }
+            }
+        }
+
+        &__price {
+            margin: 12px 0 0 0;
+            font-family: 'Proxima-700';
+            font-size: 22px;
+            line-height: 34px;
+            color: #FCFFFF;
+        }
+    }
+
 }
 
 @media(max-width: 800px) {}
 
 @media(max-width: 376px) {
+
+    .pricing-page-header {
+        background: #1D1F21;
+    }
+
     .pricing-page-main {
         width: 100%;
         background: #1D1F21;
@@ -642,5 +938,299 @@
         }
     }
 
+    .subs-buttons {
+        margin: 14px 0 0 0;
+        padding: 7px 0 0 8px;
+        display: flex;
+        flex-direction: row;
+        width: 345px;
+        height: 62px;
+        background: #212426;
+        border-radius: 12px;
 
+        &__button {
+            width: 111px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Proxima-400';
+            font-size: 14px;
+            line-height: 21px;
+            color: #FFFFFF;
+            background: transparent;
+            transition: 0.3s;
+
+            &.active {
+                font-family: 'Proxima-700';
+                font-size: 14px;
+                line-height: 20px;
+                color: #1D1F21;
+                background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+                border-radius: 12px;
+                transition: 0.3s;
+                padding: 0 7px 0 0;
+            }
+        }
+    }
+
+    .subs {
+        margin: 14px 0 0 0px;
+        width: 100%;
+        max-width: 1140px;
+        padding: 0 0px 0 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-radius: 12px;
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            visibility: hidden;
+            opacity: 0;
+            width: 0px;
+            height: 650px;
+
+            &.active {
+                width: 345px;
+                height: 650px;
+                visibility: visible;
+                opacity: 1;
+                transition: 0.3s;
+            }
+
+            &.week {
+                order: 1;
+            }
+
+            &.year {
+                margin-top: 0;
+                order: 3;
+                border-radius: 12px;
+                background: linear-gradient(94.78deg, #31FFF3 9.27%, #AD7AFF 84.06%);
+                width: 0px;
+                height: 0px;
+                padding: 0;
+
+                &.active {
+                    width: 355px;
+                    height: 660px;
+                    padding: 5px 5px 0 5px;
+                }
+            }
+
+            &.month {
+                order: 2;
+            }
+        }
+
+
+        &__container {
+            position: relative;
+            background: #212426;
+            border-radius: 12px;
+            width: 345px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__inscription {
+            margin-right: 1px;
+            position: absolute;
+            top: 13px;
+            left: 50.5%;
+            transform: translateX(-50%);
+
+            &.week._active {
+                background: url(../img/one-week-img.png) no-repeat;
+                width: 271px;
+                height: 97px;
+            }
+
+            &.year._active {
+                background: url(../img/one-year-img.png) no-repeat;
+                width: 205px;
+                height: 97px;
+            }
+
+            &.month._active {
+                background: url(../img/one-month-img.png) no-repeat;
+                width: 293px;
+                height: 97px;
+            }
+        }
+
+        &__crystal {
+            z-index: 3;
+            position: absolute;
+
+            &.week._active {
+                background: url(../img/glass-crystal.png) no-repeat;
+                width: 97px;
+                height: 137px;
+                top: 46px;
+                left: 45px;
+            }
+
+            &.year._active {
+                background: url(../img/diamond-crystal.png) no-repeat;
+                width: 130px;
+                height: 167px;
+                top: 25px;
+                left: 27px;
+            }
+
+            &.month._active {
+                background: url(../img/adamantite-crystal.png) no-repeat;
+                width: 141px;
+                height: 157px;
+                top: 41px;
+                left: 24px;
+            }
+        }
+
+        &__blur {
+            position: absolute;
+            z-index: 1;
+            width: 200px;
+            height: 137px;
+            left: -5px;
+            top: 51px;
+            filter: blur(33px);
+
+            &.week {
+                background: radial-gradient(50% 50% at 50% 50%, #35CFFF 0%, rgba(28, 54, 63, 0) 100%);
+            }
+
+            &.year {
+                background: radial-gradient(50% 50% at 50% 50%, #4E95F5 0%, rgba(28, 54, 63, 0) 100%);
+            }
+
+            &.month {
+                background: radial-gradient(50% 50% at 50% 50%, #6D37FF 0%, rgba(28, 54, 63, 0) 100%);
+            }
+        }
+
+        &__title-block {
+            margin: 154px 0 0 0;
+
+            display: flex;
+            flex-direction: column;
+            width: 270px;
+            height: 80px;
+            align-self: flex-end;
+            z-index: 5;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: 8px 0px 0px 8px;
+
+            &.year {
+                background: linear-gradient(94.78deg, #00ADC5 9.27%, #AD7AFF 84.06%)
+            }
+        }
+
+        &__title {
+            margin: 14px 0 0 24.5px;
+            font-family: 'Proxima-700';
+            font-size: 26px;
+            line-height: 34px;
+            color: #1D1F21;
+
+            &.year {
+                color: #FCFFFF;
+            }
+        }
+
+        &__undertitle {
+            margin: -4px 0 0 -31px;
+            font-family: 'Proxima-400';
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            color: #1D1F21;
+            opacity: 0.7;
+
+            &.year {
+                color: #FCFFFF;
+            }
+        }
+
+        &__benefits {
+            margin: 26.5px 0 31px 27px;
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+        }
+
+        &__text-block {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 16px;
+        }
+
+        &__diamond-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        &__text {
+            max-width: 226px;
+            font-family: 'Proxima-400';
+            font-size: 14px;
+            line-height: 21px;
+            color: #C8D2DC;
+        }
+
+        &__line {
+            width: 293px;
+            border: 1px solid #525960;
+        }
+
+        &__price-container {
+            margin: 14px 0 18px 26px;
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+        }
+
+        &__button {
+            width: 177px;
+            height: 56px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: 12px;
+            padding: 14px 0 0 51px;
+            font-family: 'Proxima-700';
+            font-size: 18px;
+            line-height: 26px;
+            color: #1D1F21;
+
+            &.year {
+                background: #1D1F21;
+                border-radius: 12px;
+
+                span {
+                    background: linear-gradient(94.78deg, #31FFF3 9.27%, #AD7AFF 84.06%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                }
+            }
+        }
+
+        &__price {
+            margin: 12px 0 0 0;
+            font-family: 'Proxima-700';
+            font-size: 22px;
+            line-height: 34px;
+            color: #FCFFFF;
+        }
+    }
+
+    .pricing-page-footer {
+        margin: 36px 0 0 0.5px;
+        width: 100%;
+
+    }
 }

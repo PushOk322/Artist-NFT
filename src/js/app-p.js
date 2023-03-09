@@ -148,6 +148,9 @@ if (dropdownButton) {
 const tabsButtons = document.querySelectorAll('.payment__button');
 const tabsContents = document.querySelectorAll('.payment__nav-part');
 
+let subsButtons = document.querySelectorAll('.subs-buttons__button');
+let subsCards = document.querySelectorAll('.subs__card');
+
 const checkboxes = document.querySelectorAll('.checkbox');
 if (checkboxes) {
     for (let i = 0; i < checkboxes.length; i++) {
@@ -169,6 +172,22 @@ if (tabsButtons) {
 
             tabsButtons[i].classList.add('active');
             tabsContents[i].classList.add('active');
+        })
+    }
+}
+
+if (subsButtons) {
+    for (let i = 0; i < subsButtons.length; i++) {
+        subsButtons[i].addEventListener("click", function (e) {
+            subsButtons.forEach(item =>
+                item.classList.remove('active')
+            );
+            subsCards.forEach(item =>
+                item.classList.remove('active')
+            );
+
+            subsButtons[i].classList.add('active');
+            subsCards[i].classList.add('active');
         })
     }
 }
