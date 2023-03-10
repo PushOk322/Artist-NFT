@@ -1,274 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
-  @@include('html/head.html', {
-    'title': 'Admin-messages-client'
-  })
+<html lang="en" class="webp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <script defer src="js/app-p-min.js"></script>
+
+    <link defer rel="stylesheet" href="css/style-p.css">
+    <title>Main-page</title>
+</head>
+
 <body>
-  <div class="school_wrapper">
-    <div class="admin_header-wrapper">@@include('html/header.html', {})</div>
-    <div class="registration_block">
-      <div class="register_form">
-        <p class="title">Register to be a designer</p>
-        <p class="text">Indulgence announcing uncommonly met she continuing two unpleasing terminated</p>
-        <a href="#" class="link">Sign up</a>
-      </div>
-      <div class="img_wrapper">
-        <img src="@img/laptopBg.webp" alt="img" class="imgBg">
-        <img src="@img/laptop.webp" alt="img" class="img">
-         <img src="@img/star.svg" alt="img" class="star-left">
-        <img src="@img/star-right.svg" alt="img" class="star-right">
-         </div>
-      <img src="@img/monitor-375.webp" alt="img" class="img-375">
-      <img src="@img/monitor-BG-375.webp" alt="img" class="imgBg-375">
-      <img src="@img/ellipse-top-blur.svg" alt="img" class="blur">
-      <img src="@img/ellipse-blur2-375.svg" alt="img" class="blur2">
-      <img src="@img/star-right.svg" alt="img" class="star_right375">
-      <img src="@img/star.svg" alt="img" class="star_left375">
-      <img src="@img/CUTOM BY YOUR OWN.svg" alt="img" class="word_left">
-      <img src="@img/CUTOM BY YOUR OWN-375.svg" alt="img" class="word_top-375">
-      <img src="@img/UNIQUE CLOTHES.svg" alt="img" class="word_bottom">
-      <img src="@img/UNIQUE CLOTHES-375.svg" alt="img" class="word_bottom-375">
+
+    <div class="page-definer index">
     </div>
-    <!------------------------------------------------------------------------------------------------------>
-    <div class="benefits_block">
-      <div class="header">
-        <p class="text _color">OUR BENEFITS</p>
-        <p class="text">Benefits of an art school</p>
-      </div>
-       <div class="item">
-        <div class="img_wrapper">
-          <img src="@img/item-star.svg" alt="img" class="img">
+
+    <section class="main-page-header">
+        @@include('html/header.html')
+    </section>
+
+    <div class="main-page-main">
+        <div class="main-page-main__wrapper">
+            <div alt="" class="main-page-main__blurred-img first lazy"></div>
+            <div alt="" class="main-page-main__blurred-img second lazy"></div>
+            <div alt="" class="main-page-main__blurred-img third lazy"></div>
+
+            <img src="@img/make-art.svg" alt="" class="main-page-main__make-art">
+            <img src="@img/not-war.svg" alt="" class="main-page-main__not-war">
+
+            <img src="@img/circle.svg" alt="" class="main-page-main__circle first">
+            <img src="@img/circle.svg" alt="" class="main-page-main__circle second">
+            <img src="@img/circle.svg" alt="" class="main-page-main__circle third">
+
+            <img src="@img/star.svg" alt="" class="main-page-main__star first">
+            <img src="@img/star.svg" alt="" class="main-page-main__star second">
+            <img src="@img/star.svg" alt="" class="main-page-main__star third">
+
+
+            <section class="main-hero">
+                <div class="main-hero__left">
+                    <div class="main-hero__socials">
+                        <img src="@img/inst-icon.svg" alt="" class="main-hero__social">
+                        <img src="@img/twitter-icon.svg" alt="" class="main-hero__social">
+                        <img src="@img/telegram-icon.svg" alt="" class="main-hero__social">
+                        <img src="@img/pinterest-icon.svg" alt="" class="main-hero__social">
+                    </div>
+                    <div class="main-hero__title">
+                        We are here to <br> inspire and <br> share art
+                    </div>
+                    <div class="main-hero__text">Indulgence announcing uncommonly <br> met she continuing two unpleasing
+                        <br> terminated
+                    </div>
+                    <div class="main-hero__buttons">
+                        <div class="main-hero__premium-button">
+                            <img src="@img/black-crown-icon.svg" alt="" class="main-hero__crown">
+                            Premium access
+                        </div>
+                        <div class="main-hero__discover-button"><span>Discover</span></div>
+                    </div>
+                </div>
+                <div class="main-hero__right">
+                    <div alt="" class="main-hero__background-img lazy"></div>
+                    <div alt="" class="main-hero__girl lazy"></div>
+                </div>
+            </section>
+
+            <section class="biography">
+                <div class="biography__images">
+                    <div alt="" class="biography__img-background lazy"></div>
+                    <div alt="" class="biography__img lazy"></div>
+                </div>
+                <div class="biography__main">
+                    <div class="biography__upper-title">
+                        BIOGRAPHY
+                    </div>
+                    <div class="biography__title">
+                        Perchen Arts. Biography
+                    </div>
+                    <div class="biography__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna
+                        aliqua. <br>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute
+                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+                        Turpis egestes maecenas pharetra convallis posuere morbi leo urna molestie at. Diam in arcu
+                        curcus euismod quis viverra
+                        nibh cras. In ante metus dictum at tempor commodo ullamcorper. Ultrices eros in curcus turpis
+                        massa.
+                    </div>
+                    <div class="biography__container">
+                        <div class="biography__block">
+                            <div class="biography__year">2007</div>
+                            <div class="biography__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </div>
+                        </div>
+                        <div class="biography__block">
+                            <div class="biography__year">2014</div>
+                            <div class="biography__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </div>
+                        </div>
+                        <div class="biography__block">
+                            <div class="biography__year">2019</div>
+                            <div class="biography__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="premium">
+                <div class="premium__main">
+                    <img src="@img/white-crown.svg" alt="" class="premium__crown">
+                    <div class="premium__title">Get the premium access</div>
+                    <div class="premium__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna
+                        aliqua. <br>
+                        Ut enim ad minim veniam</div>
+                    <div class="premium__button">
+                        <span>Go to plans</span>
+                    </div>
+                </div>
+                <div class="premium__figures lazy"></div>
+            </section>
+
+            <section class="swiper main-slider">
+                <div class="swiper-wrapper main-slider__wrapper">
+                    <div class="swiper-slide main-slider__slide ">
+                        <div class="main-slider__container">
+                            <div class="main-slider__nft-word">
+                                <span>nft</span>
+                            </div>
+                            <div class="main-slider__img-container first">
+                                <div class="main-slider__img lazy"></div>
+                            </div>
+                            <div class="main-slider__title">Title of picture or NFT</div>
+                            <div class="main-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum
+                                dolor ipsum dolor</div>
+                            <div class="main-slider__line"></div>
+                            <div class="main-slider__buying">
+                                <div class="main-slider__price">$100 322</div>
+                                <div class="main-slider__buy-button">Buy now</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main-slider__slide ">
+                        <div class="main-slider__container">
+                            <div class="main-slider__nft-word">
+                                <span>nft</span>
+                            </div>
+                            <div class="main-slider__img-container second">
+                                <div class="main-slider__img lazy"></div>
+                            </div>
+                            <div class="main-slider__title">Title of picture or NFT</div>
+                            <div class="main-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum
+                                dolor ipsum dolor
+                            </div>
+                            <div class="main-slider__line"></div>
+                            <div class="main-slider__buying">
+                                <div class="main-slider__price">$100 322</div>
+                                <div class="main-slider__buy-button">Buy now</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main-slider__slide ">
+                        <div class="main-slider__container">
+                            <div class="main-slider__nft-word">
+                                <span>nft</span>
+                            </div>
+                            <div class="main-slider__img-container third">
+                                <div class="main-slider__img lazy"></div>
+                            </div>
+                            <div class="main-slider__title">Title of picture or NFT</div>
+                            <div class="main-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum
+                                dolor ipsum dolor
+                            </div>
+                            <div class="main-slider__line"></div>
+                            <div class="main-slider__buying">
+                                <div class="main-slider__price">$100 322</div>
+                                <div class="main-slider__buy-button">Buy now</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main-slider__slide ">
+                        <div class="main-slider__container">
+                            <div class="main-slider__nft-word">
+                                <span>nft</span>
+                            </div>
+                            <div class="main-slider__img-container first">
+                                <div class="main-slider__img lazy"></div>
+                            </div>
+                            <div class="main-slider__title">Title of picture or NFT</div>
+                            <div class="main-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum
+                                dolor ipsum dolor
+                            </div>
+                            <div class="main-slider__line"></div>
+                            <div class="main-slider__buying">
+                                <div class="main-slider__price">$100 322</div>
+                                <div class="main-slider__buy-button">Buy now</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main-slider__slide ">
+                        <div class="main-slider__container">
+                            <div class="main-slider__nft-word">
+                                <span>nft</span>
+                            </div>
+                            <div class="main-slider__img-container second">
+                                <div class="main-slider__img lazy"></div>
+                            </div>
+                            <div class="main-slider__title">Title of picture or NFT</div>
+                            <div class="main-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum
+                                dolor ipsum dolor
+                            </div>
+                            <div class="main-slider__line"></div>
+                            <div class="main-slider__buying">
+                                <div class="main-slider__price">$100 322</div>
+                                <div class="main-slider__buy-button">Buy now</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main-slider__slide ">
+                        <div class="main-slider__container">
+                            <div class="main-slider__nft-word">
+                                <span>nft</span>
+                            </div>
+                            <div class="main-slider__img-container third">
+                                <div class="main-slider__img lazy"></div>
+                            </div>
+                            <div class="main-slider__title">Title of picture or NFT</div>
+                            <div class="main-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum
+                                dolor ipsum dolor
+                            </div>
+                            <div class="main-slider__line"></div>
+                            <div class="main-slider__buying">
+                                <div class="main-slider__price">$100 322</div>
+                                <div class="main-slider__buy-button">Buy now</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-page-form">
+                @@include('html/contact-form.html')
+            </section>
+
+            <section class="main-page-footer">
+                @@include('html/footer.html')
+            </section>
         </div>
-        <span class="title">Title of benefits</span>
-        <p class="text">May indulgence difficulty ham can put especially. Bringing remember for supplied her why was confined.</p>
-       </div>
-       <div class="item">
-        <div class="img_wrapper">
-          <img src="@img/item-star.svg" alt="img" class="img">
-        </div>
-        <span class="title">Title of benefits</span>
-        <p class="text">May indulgence difficulty ham can put especially. Bringing remember for supplied her why was confined.</p>
-       </div>
-       <div class="item">
-        <div class="img_wrapper">
-          <img src="@img/item-star.svg" alt="img" class="img">
-        </div>
-        <span class="title">Title of benefits</span>
-        <p class="text">May indulgence difficulty ham can put especially. Bringing remember for supplied her why was confined.</p>
-       </div>
-       <div class="item">
-        <div class="img_wrapper">
-          <img src="@img/item-star.svg" alt="img" class="img">
-        </div>
-        <span class="title">Title of benefits</span>
-        <p class="text">May indulgence difficulty ham can put especially. Bringing remember for supplied her why was confined.</p>
-       </div>
     </div>
-    <!--------------------------------------------------------------------------------------->
-    <div class="school_fees-block">
-      <div class="school_fees-container">
-        <div class="header">
-          <p class="title">Artist School Fees</p>
-          <p class="text">Indulgence announcing uncommonly met she continuing two unpleasing terminated</p>
-        </div>
-        <div class="item">
-           <div class="button_wrapper">
-           <div class="button"><a class="link _week">One week</a></div>
-           <div class="button"><a class="link _month">Month</a></div>
-           <div class="button"><a class="link _individual">Individual</a></div>
-          </div>
-        </div>
-        <div class="card_wrapper">
-        <div class="card _card1">
-          <div class="img_wrapper"><img src="@img/1 WEEK.svg" alt="img" class="title"></div>
-          <img src="@img/card1-blur.svg" alt="img" class="blur-card">
-          <div class="header">
-            <img src="@img/card1-hand.svg" alt="img" class="hand">
-            <img src="@img/card1-board.svg" alt="img" class="board">
-          </div>
-          <div class="line_wrapper">
-          <div class="line _borderBottom">
-            <img src="@img/Diamond.svg" alt="img" class="diamond">
-            <p class="text">To purchase item by crypto you have to send money to this wallet. After 5 minute result 
-              will sent in your mail</p>
-          </div>
-          </div>
-          <div class="line_wrapper">
-          <div class="line _borderBottom">
-            <img src="@img/Diamond.svg" alt="img" class="diamond">
-            <p class="text">To purchase item by crypto you have to send money</p>
-          </div>
-          </div>
-          <div class="line_wrapper">
-          <div class="line _borderBottom">
-            <img src="@img/Diamond.svg" alt="img" class="diamond">
-            <p class="text">To purchase item by crypto you have to send money to this wallet. After 5 minute result will sent in your mail</p>
-          </div>
-          </div>
-          <div class="line_wrapper">
-          <div class="line _borderBottom  _noBorder">
-            <img src="@img/Diamond.svg" alt="img" class="diamond">
-            <p class="text">To purchase item by crypto you have to send money</p>
-          </div>
-          </div>
-          <div class="price_wrapper">
-            <a href="#" class="button">Сhoose</a>
-            <p class="text">$250.99</p>
-          </div>
-        </div>
-        <!--card2----------------------------------------------------------------------------------->
-        <div class="card _card2">
-          <div class="img_wrapper"><img src="@img/Individual.svg" alt="img" class="title"></div>
-          <img src="@img/card2-blur.webp" alt="img" class="blur-card">
-          <div class="header">
-            <img src="@img/card2-hand.webp" alt="img" class="hand">
-            <img src="@img/card2-board.webp" alt="img" class="board">
-          </div>
-          <div class="line_wrapper _marginTop">
-          <div class="line _borderBottom">
-            <img src="@img/Diamond.svg" alt="img" class="diamond">
-            <p class="text">To purchase item by crypto you have to send money to this wallet. After 5 minute result 
-              will sent in your mail</p>
-          </div>
-          </div>
-          <div class="line_wrapper">
-          <div class="line _borderBottom">
-            <img src="@img/Diamond.svg" alt="img" class="diamond">
-            <p class="text">To purchase item by crypto you have to send money</p>
-          </div>
-          </div>
-          <div class="line_wrapper">
-          <div class="line _borderBottom">
-            <img src="@img/Diamond.svg" alt="img" class="diamond">
-            <p class="text">To purchase item by crypto you have to send money to this wallet. After 5 minute result will sent in your mail</p>
-          </div>
-          </div>
-          <div class="line_wrapper">
-          <div class="line _borderBottom  _noBorder">
-            <img src="@img/Diamond.svg" alt="img" class="diamond">
-            <p class="text">To purchase item by crypto you have to send money</p>
-          </div>
-          </div>
-          <div class="price_wrapper">
-            <a href="#" class="button"><span>Choose</span></a>
-            <p class="text">$250.99</p>
-            </div>
-        </div>
-        <!--card3--------------------------------------------------------------------------------->
-        <div class="card _card3">
-          <div class="img_wrapper"><img src="@img/MONTH.svg" alt="img" class="title"></div>
-          <img src="@img/card3-blur.webp" alt="img" class="blur-card">
-          <div class="header">
-            <img src="@img/card3-hand.webp" alt="img" class="hand">
-            <img src="@img/card1-board.svg" alt="img" class="board">
-          </div>
-          <div class="line_wrapper">
-          <div class="line _borderBottom">
-            <img src="@img/Diamond.svg" alt="img" class="diamond">
-            <p class="text">To purchase item by crypto you have to send money to this wallet. After 5 minute result 
-              will sent in your mail</p>
-          </div>
-          </div>
-          <div class="line_wrapper">
-          <div class="line _borderBottom">
-            <img src="@img/Diamond.svg" alt="img" class="diamond">
-            <p class="text">To purchase item by crypto you have to send money</p>
-          </div>
-          </div>
-          <div class="line_wrapper">
-          <div class="line _borderBottom">
-            <img src="@img/Diamond.svg" alt="img" class="diamond">
-            <p class="text">To purchase item by crypto you have to send money to this wallet. After 5 minute result will sent in your mail</p>
-          </div>
-          </div>
-          <div class="line_wrapper">
-          <div class="line _borderBottom  _noBorder">
-            <img src="@img/Diamond.svg" alt="img" class="diamond">
-            <p class="text">To purchase item by crypto you have to send money</p>
-          </div>
-          </div>
-          <div class="price_wrapper">
-            <a href="#" class="button">Сhoose</a>
-            <p class="text">$250.99</p>
-          </div>
-        </div>
-        </div>
-        <!------------------------------------------------------------------------------------------>
-      </div>
-      <img src="@img/fees-blur.svg" alt="img" class="blur">
-      <img src="@img/cube.webp" alt="img" class="cube">
-      <img src="@img/cube-blur.webp" alt="img" class="cube_blur">
-      <img src="@img/cube-right-fees.svg" alt="img" class="cube_right">
-      <img src="@img/star-fees.svg" alt="" class="star">
-      <div class="art"><img src="@img/MAKE ART.svg" alt="img"></div>
-      <div class="war"><img src="@img/NOT WAR.svg" alt="img"></div>
-      <img src="@img/NOT WAR-375.svg" alt="img" class="war-375">
-      <img src="@img/MAKE ART-375.svg" alt="img" class="art-375">
-      <img src="@img/grey-hole.svg" alt="img" class="grey_hole">
-    </div>
-    <!---------------------------------------------------------------------------------------------------------->
-    <div class="register_block">
-      <div class="container">
-        <h3 class="title">Register to be a designer</h3>
-        <div class="img_wrapper"><img src="@img/register-img.svg" alt="img"></div>
-        <form action="#" class="form">
-          <div class="item">
-            <label for="name" class="label">Name</label>
-            <input type="text" class="input" id="name" placeholder="Your name">
-          </div>
-          <div class="item">
-            <label for="email" class="label">Mail</label>
-            <input type="text" class="input" id="email" placeholder="Your mail">
-          </div>
-          <div class="item">
-            <label for="comment" class="label">Design preferences</label>
-            <input type="text" class="input _big" id="comment" placeholder="Your comment">
-          </div>
-          <div class="item">
-            <label for="comment" class="label">Choose your plan</label>
-            <div class="input_wrapper">
-             <div class="_smal"><a class="button">One week</a></div>
-             <div class="_smal"><a class="button">Individual</a></div>
-             <div class="_smal"><a class="button">One month</a></div>
-            </div>
-          </div>
-          <a href="#" class="signUp">Sign up</a>
-          <div class="agree_wrapper">
-            <input type="radio" class="radio">
-            <span class="text">I agree with </span>
-            <span class="text _color">Privacy Policy</span>
-            <span class="text">and</span>
-            <span class="text _color">Terms of use</span>
-          </div>
-        </form>
-      </div>
-      <img src="@img/diamond-blur.webp" alt="img" class="diamond_blur">
-      <img src="@img/cube.webp" alt="img" class="diamond_bottom">
-      <img src="@img/diamond-blue.webp" alt="img" class="diamond_blue">
-      <img src="@img/cube-blur-bottom.webp" alt="img" class="cube_bottom">
-    </div>
-   <div class="footer_wrapper">@@include('html/footer.html', {})</div>
-  </div>
+
+
+
 </body>
-<script>
-  const week = document.querySelector('._week');
-  const month = document.querySelector('._month');
-  const individual = document.querySelector('._individual');
-  const card1 = document.querySelector('._card1');
-  const card2 = document.querySelector('._card2');
-  const card3 = document.querySelector('._card3');
-  week.addEventListener('click', () => {
-   card1.style.order = '1';
-  });
-  month.addEventListener('click', () => {
-   card3.style.order = '1';
-   card1.style.order = '2';
-   card2.style.order = '3';
-  });
-  individual.addEventListener('click', () => {
-   card2.style.order = '1';
-   card1.style.order = '2';
-   card3.style.order = '3';
-  });
-</script>
+
 </html>
