@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="webp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <script defer src="js/app-p-min.js"></script>
+
+    <link defer rel="stylesheet" href="css/style-p.css">
+    <title>hire-page</title>
+</head>
+
+<body>
+
+    <div class="page-definer index">
+    </div>
+
+    <section class="hire-page-header">
+        @@include('html/header.html')
+    </section>
+
+    <div class="hire-page-main">
+        <div class="hire-page-main__wrapper">
+            <div alt="" class="hire-page-main__blurred-img first lazy"></div>
+
+            <img src="@img/a-part-img.svg" alt="" class="hire-page-main__a-part">
+            <img src="@img/our-team-img.svg" alt="" class="hire-page-main__our-team">
+
+            <img src="@img/circle.svg" alt="" class="hire-page-main__circle first">
+
+            <img src="@img/star.svg" alt="" class="hire-page-main__star first">
+            <img src="@img/star.svg" alt="" class="hire-page-main__star second">
+
+            <section class="hire-page-form">
+                @@include('html/contact-form.html')
+            </section>
+
+            <section class="hire-page-footer">
+                @@include('html/footer.html')
+            </section>
+        </div>
+        <div class="height"></div>
+    </div>
+
+
+
+</body>
+
+</html>

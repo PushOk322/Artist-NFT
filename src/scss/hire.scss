@@ -1,0 +1,231 @@
+.main-page-header {
+    width: 100%;
+}
+
+
+.hire-page-main {
+    width: 100%;
+    background: #1D1F21;
+    display: flex;
+    justify-content: center;
+
+    &__wrapper {
+        width: 100%;
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+        position: relative;
+    }
+
+    &__blurred-img {
+        opacity: 0.7;
+        filter: blur(124.532px);
+        width: 100%;
+        max-width: 758px;
+        height: 699.04px;
+        position: absolute;
+        z-index: -1;
+        background: #86a8ff63;
+    }
+
+    &__blurred-img.first._active {
+        background: url(../img/first-blurred-img.png);
+        transition: 0.5s;
+        top: 137px;
+        left: -332px;
+    }
+
+
+    &__a-part {
+        position: absolute;
+        z-index: 3;
+        top: 40px;
+        left: -105px;
+        width: 623px;
+        height: 97px;
+    }
+
+    &__our-team {
+        position: absolute;
+        z-index: -1;
+        top: 510px;
+        left: 464px;
+        width: 536px;
+        height: 97px;
+    }
+
+    &__circle {
+        position: absolute;
+        z-index: 3;
+    }
+
+    &__circle.first {
+        top: 487px;
+        left: 630px;
+        width: 25px;
+        height: 25px;
+    }
+
+    &__star {
+        position: absolute;
+        z-index: 3;
+    }
+
+    &__star.first {
+        top: 440px;
+        right: 681px;
+        width: 46px;
+        height: 62px;
+        transform: rotate(11.82deg);
+    }
+
+    &__star.second {
+        top: 241px;
+        right: 107px;
+        width: 33.19px;
+        height: 44.73px;
+        transform: rotate(-16.11deg);
+    }
+}
+
+
+.hire-page-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.height {
+    height: 3000px;
+}
+
+
+.hire-page-footer {
+    margin: 90px 0 0 0;
+    width: 100%;
+
+}
+
+@media(max-width: 1025px) {
+    .hire-page-main {
+        width: 100%;
+        background: #1D1F21;
+        display: flex;
+        justify-content: center;
+
+        &__wrapper {
+            width: 100%;
+            max-width: 1440px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 2;
+            position: relative;
+        }
+
+        &__blurred-img {
+            opacity: 0.7;
+            filter: blur(124.532px);
+            width: 100%;
+            max-width: 480px;
+            height: 444px;
+            position: absolute;
+            z-index: -1;
+            background: #86a8ff63;
+        }
+
+        &__blurred-img.first._active {
+            background: url(../img/first-blurred-img.png);
+            transition: 0.5s;
+            top: 187px;
+            left: -14.72px;
+        }
+
+
+        &__a-part {
+            position: absolute;
+            z-index: 3;
+            top: 5px;
+            left: 81px;
+            width: 389px;
+            height: 61px;
+        }
+
+        &__our-team {
+            position: absolute;
+            z-index: -1;
+            top: 521px;
+            left: -79px;
+            width: 335px;
+            height: 61px;
+        }
+
+        &__circle {
+            position: absolute;
+            z-index: 3;
+        }
+
+        &__circle.first {
+            top: 398px;
+            left: 105px;
+            width: 25px;
+            height: 25px;
+        }
+
+        &__star {
+            position: absolute;
+            z-index: 3;
+        }
+
+        &__star.first {
+            top: 368px;
+            right: auto;
+            left: 0px;
+            width: 30px;
+            height: 41px;
+            transform: rotate(11.82deg);
+        }
+
+        &__star.second {
+            top: 361px;
+            right: 37px;
+            width: 36px;
+            height: 48px;
+            transform: rotate(-16.11deg);
+        }
+    }
+}
+
+@media(max-width: 800px) {}
+
+
+@media(max-width: 376px) {
+
+    .hire-page-footer {
+        margin: 35px 0 0 0;
+        width: 100%;
+
+    }
+}
+
+
+
+
+
+
+@import 'header';
+@import 'footer';
+@import 'contact-form';
+
+
+@import 'gallery';
+@import 'customs';
+@import 'product';
+@import 'auction';
+@import 'payment';
+@import 'pricing';
+
+@import "../../node_modules/swiper/swiper-bundle.min.css";
