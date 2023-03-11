@@ -15,11 +15,19 @@
       <div class="img_wrapper">
         <img src="@img/laptopBg.webp" alt="img" class="imgBg">
         <img src="@img/laptop.webp" alt="img" class="img">
-        <img src="@img/star.svg" alt="img" class="star-left">
+         <img src="@img/star.svg" alt="img" class="star-left">
         <img src="@img/star-right.svg" alt="img" class="star-right">
-      </div>
+         </div>
+      <img src="@img/monitor-375.webp" alt="img" class="img-375">
+      <img src="@img/monitor-BG-375.webp" alt="img" class="imgBg-375">
+      <img src="@img/ellipse-top-blur.svg" alt="img" class="blur">
+      <img src="@img/ellipse-blur2-375.svg" alt="img" class="blur2">
+      <img src="@img/star-right.svg" alt="img" class="star_right375">
+      <img src="@img/star.svg" alt="img" class="star_left375">
       <img src="@img/CUTOM BY YOUR OWN.svg" alt="img" class="word_left">
+      <img src="@img/CUTOM BY YOUR OWN-375.svg" alt="img" class="word_top-375">
       <img src="@img/UNIQUE CLOTHES.svg" alt="img" class="word_bottom">
+      <img src="@img/UNIQUE CLOTHES-375.svg" alt="img" class="word_bottom-375">
     </div>
     <!------------------------------------------------------------------------------------------------------>
     <div class="benefits_block">
@@ -63,6 +71,14 @@
           <p class="title">Artist School Fees</p>
           <p class="text">Indulgence announcing uncommonly met she continuing two unpleasing terminated</p>
         </div>
+        <div class="item">
+           <div class="button_wrapper">
+           <div class="button"><a class="link _week">One week</a></div>
+           <div class="button"><a class="link _month">Month</a></div>
+           <div class="button"><a class="link _individual">Individual</a></div>
+          </div>
+        </div>
+        <div class="card_wrapper">
         <div class="card _card1">
           <div class="img_wrapper"><img src="@img/1 WEEK.svg" alt="img" class="title"></div>
           <img src="@img/card1-blur.svg" alt="img" class="blur-card">
@@ -176,6 +192,7 @@
             <p class="text">$250.99</p>
           </div>
         </div>
+        </div>
         <!------------------------------------------------------------------------------------------>
       </div>
       <img src="@img/fees-blur.svg" alt="img" class="blur">
@@ -185,6 +202,9 @@
       <img src="@img/star-fees.svg" alt="" class="star">
       <div class="art"><img src="@img/MAKE ART.svg" alt="img"></div>
       <div class="war"><img src="@img/NOT WAR.svg" alt="img"></div>
+      <img src="@img/NOT WAR-375.svg" alt="img" class="war-375">
+      <img src="@img/MAKE ART-375.svg" alt="img" class="art-375">
+      <img src="@img/grey-hole.svg" alt="img" class="grey_hole">
     </div>
     <!---------------------------------------------------------------------------------------------------------->
     <div class="register_block">
@@ -212,9 +232,43 @@
              <div class="_smal"><a class="button">One month</a></div>
             </div>
           </div>
+          <a href="#" class="signUp">Sign up</a>
+          <div class="agree_wrapper">
+            <input type="radio" class="radio">
+            <span class="text">I agree with </span>
+            <span class="text _color">Privacy Policy</span>
+            <span class="text">and</span>
+            <span class="text _color">Terms of use</span>
+          </div>
         </form>
       </div>
+      <img src="@img/diamond-blur.webp" alt="img" class="diamond_blur">
+      <img src="@img/cube.webp" alt="img" class="diamond_bottom">
+      <img src="@img/diamond-blue.webp" alt="img" class="diamond_blue">
+      <img src="@img/cube-blur-bottom.webp" alt="img" class="cube_bottom">
     </div>
+   <div class="footer_wrapper">@@include('html/footer.html', {})</div>
   </div>
 </body>
+<script>
+  const week = document.querySelector('._week');
+  const month = document.querySelector('._month');
+  const individual = document.querySelector('._individual');
+  const card1 = document.querySelector('._card1');
+  const card2 = document.querySelector('._card2');
+  const card3 = document.querySelector('._card3');
+  week.addEventListener('click', () => {
+   card1.style.order = '1';
+  });
+  month.addEventListener('click', () => {
+   card3.style.order = '1';
+   card1.style.order = '2';
+   card2.style.order = '3';
+  });
+  individual.addEventListener('click', () => {
+   card2.style.order = '1';
+   card1.style.order = '2';
+   card3.style.order = '3';
+  });
+</script>
 </html>
