@@ -1,0 +1,202 @@
+.forum-page-header {
+    width: 100%;
+}
+
+
+.forum-page-main {
+    width: 100%;
+    background: #1D1F21;
+    display: flex;
+    justify-content: center;
+
+    &__wrapper {
+        width: 100%;
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+        position: relative;
+    }
+
+    &__blurred-img {
+        opacity: 0.7;
+        filter: blur(124.532px);
+        width: 100%;
+        max-width: 758px;
+        height: 699.04px;
+        position: absolute;
+        z-index: -1;
+        background: #86a8ff63;
+    }
+
+    &__blurred-img.first._active {
+        background: url(../img/first-blurred-img.png);
+        transition: 0.5s;
+        top: 137px;
+        left: -332px;
+    }
+
+
+    &__a-part {
+        position: absolute;
+        z-index: 3;
+        top: 17px;
+        left: 130px;
+        width: 616px;
+        height: 97px;
+    }
+
+    &__our-team {
+        position: absolute;
+        z-index: -1;
+        top: 508px;
+        left: 466px;
+        width: 530px;
+        height: 97px;
+    }
+
+    &__circle {
+        position: absolute;
+        z-index: 3;
+    }
+
+    &__circle.first {
+        top: 487px;
+        left: 630px;
+        width: 25px;
+        height: 25px;
+    }
+
+    &__star {
+        position: absolute;
+        z-index: 3;
+    }
+
+    &__star.first {
+        top: 446px;
+        right: 707px;
+        width: 45px;
+        height: 60px;
+        transform: rotate(11.82deg);
+    }
+
+    &__star.second {
+        top: 245px;
+        right: 113px;
+        width: 33.19px;
+        height: 44.73px;
+        transform: rotate(-16.11deg);
+    }
+}
+
+
+.forum-page-footer {
+    margin: 115px 0 0 0;
+    width: 100%;
+
+}
+
+@media(max-width: 1025px) {
+    .forum-page-main {
+        width: 100%;
+        background: #1D1F21;
+        display: flex;
+        justify-content: center;
+
+        &__wrapper {
+            width: 100%;
+            max-width: 1440px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 2;
+            position: relative;
+        }
+
+        &__blurred-img {
+            opacity: 0.7;
+            filter: blur(124.532px);
+            width: 100%;
+            max-width: 480px;
+            height: 444px;
+            position: absolute;
+            z-index: -1;
+            background: #86a8ff63;
+        }
+
+        &__blurred-img.first._active {
+            background: url(../img/first-blurred-img.png);
+            transition: 0.5s;
+            top: 187px;
+            left: -14.72px;
+        }
+
+
+        &__a-part {
+            position: absolute;
+            z-index: 3;
+            top: 4px;
+            left: 84px;
+            width: 385px;
+            height: 61px;
+        }
+
+        &__our-team {
+            position: absolute;
+            z-index: -1;
+            top: 519px;
+            left: -77px;
+            width: 330px;
+            height: 61px;
+        }
+
+        &__circle {
+            position: absolute;
+            z-index: 3;
+        }
+
+        &__circle.first {
+            top: 398px;
+            left: 105px;
+            width: 25px;
+            height: 25px;
+        }
+
+        &__star {
+            position: absolute;
+            z-index: 3;
+        }
+
+        &__star.first {
+            top: 368px;
+            right: auto;
+            left: 0px;
+            width: 30px;
+            height: 41px;
+            transform: rotate(0);
+        }
+
+        &__star.second {
+            top: 361px;
+            right: 37px;
+            width: 36px;
+            height: 48px;
+            transform: rotate(0);
+        }
+    }
+
+}
+
+@media(max-width: 800px) {}
+
+
+@media(max-width: 376px) {
+
+
+    .forum-page-footer {
+        margin: 35px 0 0 0;
+        width: 100%;
+
+    }
+}
