@@ -30,8 +30,8 @@
 @import 'config/common';
 
 // Подключение стилей отдельных блоков и секций =======================================================================================================================
-@import 'layout/authorization-log-in.scss';
-@import 'layout/authorization-sign-up.scss';
+@import 'layout/authorization-log-in';
+@import 'layout/authorization-sign-up';
 @import 'layout/admin-messages';
 @import 'layout/admin-orders';
 @import 'layout/admin-NFT-orders';
