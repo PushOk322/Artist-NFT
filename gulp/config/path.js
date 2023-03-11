@@ -19,7 +19,7 @@ export const path = {
         images: `${srcFolder}/img/**/*.{jpg,webp,jpeg,png,gif}`,
         svg: `${srcFolder}/img/**/*.svg`,
         js: `${srcFolder}/js/app-p.js`,
-        scss: `${srcFolder}/scss/style-p.scss`,
+        scss: `${srcFolder}/scss/*.scss`,
         html: `${srcFolder}/*.html`,
         files: `${srcFolder}/files/**/*.*`,
     },
