@@ -1,0 +1,672 @@
+.hire-page-header {
+    width: 100%;
+}
+
+
+.hire-page-main {
+    width: 100%;
+    background: #1D1F21;
+    display: flex;
+    justify-content: center;
+
+    &__wrapper {
+        width: 100%;
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+        position: relative;
+    }
+
+    &__blurred-img {
+        opacity: 0.7;
+        filter: blur(124.532px);
+        width: 100%;
+        max-width: 758px;
+        height: 699.04px;
+        position: absolute;
+        z-index: -1;
+        background: #86a8ff63;
+    }
+
+    &__blurred-img.first._active {
+        background: url(../img/first-blurred-img.png);
+        transition: 0.5s;
+        top: 137px;
+        left: -332px;
+    }
+
+
+    &__a-part {
+        position: absolute;
+        z-index: 3;
+        top: 17px;
+        left: 130px;
+        width: 616px;
+        height: 97px;
+    }
+
+    &__our-team {
+        position: absolute;
+        z-index: -1;
+        top: 508px;
+        left: 466px;
+        width: 530px;
+        height: 97px;
+    }
+
+    &__circle {
+        position: absolute;
+        z-index: 3;
+    }
+
+    &__circle.first {
+        top: 487px;
+        left: 630px;
+        width: 25px;
+        height: 25px;
+    }
+
+    &__star {
+        position: absolute;
+        z-index: 3;
+    }
+
+    &__star.first {
+        top: 446px;
+        right: 707px;
+        width: 45px;
+        height: 60px;
+        transform: rotate(11.82deg);
+    }
+
+    &__star.second {
+        top: 245px;
+        right: 113px;
+        width: 33.19px;
+        height: 44.73px;
+        transform: rotate(-16.11deg);
+    }
+}
+
+.hire-hero {
+    margin: 53px 0 0 30px;
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__main {
+        margin: 46px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin: 0 0 0 0;
+        font-family: 'Proxima-700';
+        font-size: 64px;
+        line-height: 65px;
+        color: #FCFFFF;
+        max-width: 495px;
+    }
+
+    &__text {
+        margin: 16px 0 0 0;
+        font-family: 'Proxima-400';
+        font-size: 16px;
+        line-height: 28px;
+        color: #FCFFFF;
+        max-width: 540px;
+    }
+
+    &__button {
+        margin: 40px 0 0 0;
+        width: 209px;
+        height: 64px;
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        border-radius: 16px;
+        padding: 19.5px 0 0 22px;
+        font-family: 'Proxima-700';
+        font-size: 18px;
+        line-height: 26px;
+        color: #1D1F21;
+    }
+
+    &__icon {
+        margin: 0px 4px 0 0;
+        width: 24px;
+        height: 24px;
+
+    }
+
+    &__images {
+        margin: 34px 17px 0 0;
+        position: relative;
+        width: 100%;
+        max-width: 450px;
+        height: 451px;
+    }
+
+    &__background {
+        width: 100%;
+        max-width: 450px;
+        height: 451px;
+        transform: rotate(9.62deg);
+
+        &._active {
+            background-image: url(../img/hire-hero-background-img.png);
+        }
+    }
+
+
+    &__img {
+        position: absolute;
+        top: 6px;
+        left: -59px;
+        width: 440px;
+        height: 440px;
+
+        &._active {
+            background-image: url(../img/hire-hero-img.png);
+        }
+    }
+}
+
+.hire-benefits {
+    margin: 103px 0 0 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__color-words {
+        margin: 0 0 0 2px;
+        max-width: 148px;
+        font-family: 'Proxima-700';
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.1em;
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    &__title {
+        margin: 1px 0 0 1px;
+        font-family: 'Proxima-700';
+        font-size: 36px;
+        line-height: 50px;
+        text-align: center;
+        color: #FCFFFF;
+    }
+
+    &__container {
+        margin: 31px 0 0 0;
+        max-width: 1110px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__block {
+        width: 255px;
+        height: 254px;
+        background: #212426;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        padding: 18px 0 0 19px;
+    }
+
+    &__icon {
+        width: 48px;
+        height: 48px;
+        background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+        border-radius: 12px;
+        padding: 10px;
+    }
+
+    &__star {
+        width: 28px;
+        height: 28px;
+    }
+
+    &__heading {
+        margin: 9px 0 0 -3px;
+        width: 142px;
+        font-family: 'Proxima-700';
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: #FCFFFF;
+    }
+
+    &__text {
+        margin: 5px 0 0 0;
+        max-width: 213px;
+        font-family: 'Proxima-400';
+        font-size: 16px;
+        line-height: 28px;
+        color: #FCFFFF;
+    }
+}
+
+
+
+
+
+.hire-page-form {
+    margin: -25px 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.hire-page-footer {
+    margin: 115px 0 0 0;
+    width: 100%;
+
+}
+
+@media(max-width: 1025px) {
+    .hire-page-main {
+        width: 100%;
+        background: #1D1F21;
+        display: flex;
+        justify-content: center;
+
+        &__wrapper {
+            width: 100%;
+            max-width: 1440px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 2;
+            position: relative;
+        }
+
+        &__blurred-img {
+            opacity: 0.7;
+            filter: blur(124.532px);
+            width: 100%;
+            max-width: 480px;
+            height: 444px;
+            position: absolute;
+            z-index: -1;
+            background: #86a8ff63;
+        }
+
+        &__blurred-img.first._active {
+            background: url(../img/first-blurred-img.png);
+            transition: 0.5s;
+            top: 187px;
+            left: -14.72px;
+        }
+
+
+        &__a-part {
+            position: absolute;
+            z-index: 3;
+            top: 4px;
+            left: 84px;
+            width: 385px;
+            height: 61px;
+        }
+
+        &__our-team {
+            position: absolute;
+            z-index: -1;
+            top: 519px;
+            left: -77px;
+            width: 330px;
+            height: 61px;
+        }
+
+        &__circle {
+            position: absolute;
+            z-index: 3;
+        }
+
+        &__circle.first {
+            top: 398px;
+            left: 105px;
+            width: 25px;
+            height: 25px;
+        }
+
+        &__star {
+            position: absolute;
+            z-index: 3;
+        }
+
+        &__star.first {
+            top: 368px;
+            right: auto;
+            left: 0px;
+            width: 30px;
+            height: 41px;
+            transform: rotate(0);
+        }
+
+        &__star.second {
+            top: 361px;
+            right: 37px;
+            width: 36px;
+            height: 48px;
+            transform: rotate(0);
+        }
+    }
+
+    .hire-hero {
+        margin: 62px 0 0 30px;
+        width: 100%;
+        max-width: 1140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        &__main {
+            margin: 0px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            margin: 0 0 0 0;
+            font-family: 'Proxima-700';
+            font-size: 64px;
+            line-height: 65px;
+            color: #FCFFFF;
+            max-width: 495px;
+            text-align: center;
+        }
+
+        &__text {
+            margin: 16px 0 0 0;
+            font-family: 'Proxima-400';
+            font-size: 16px;
+            line-height: 28px;
+            color: #FCFFFF;
+            max-width: 540px;
+            text-align: center;
+        }
+
+        &__button {
+            margin: 32px 0 0 0;
+            width: 193px;
+            height: 52px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: 16px;
+            padding: 12px 0 0 28px;
+            font-family: 'Proxima-700';
+            font-size: 15px;
+            line-height: 26px;
+            color: #1D1F21;
+        }
+
+        &__icon {
+            margin: 4px 4px 0 0;
+            width: 18px;
+            height: 18px;
+
+        }
+
+        &__images {
+            margin: 75px 0px 0 0px;
+            position: relative;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+
+        &__background {
+            width: 285.57px;
+            height: 286.21px;
+            transform: rotate(9.62deg);
+
+            &._active {
+                background-image: url(../img/hire-hero-background-img.png);
+                background-size: 285.57px 286.21px;
+            }
+        }
+
+
+        &__img {
+            position: absolute;
+            top: 5px;
+            left: -38px;
+            width: 279px;
+            height: 279px;
+
+            &._active {
+                background-image: url(../img/hire-hero-img.png);
+                background-size: 279px 279px;
+            }
+        }
+    }
+}
+
+@media(max-width: 800px) {}
+
+
+@media(max-width: 376px) {
+
+    .hire-hero {
+        margin: 62px 0 0 30px;
+        width: 100%;
+        max-width: 1140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        &__main {
+            margin: 0px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__title {
+            margin: 0 0 0 0;
+            font-family: 'Proxima-700';
+            font-size: 36px;
+            line-height: 40px;
+            color: #FCFFFF;
+            max-width: 296px;
+            text-align: left;
+        }
+
+        &__text {
+            margin: 8px 0 0 0;
+            font-family: 'Proxima-400';
+            font-size: 15px;
+            line-height: 24px;
+            color: #FCFFFF;
+            max-width: 345px;
+            text-align: left;
+        }
+
+        &__button {
+            margin: 32px 0 0 0;
+            width: 193px;
+            height: 52px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: 16px;
+            padding: 12px 0 0 28px;
+            font-family: 'Proxima-700';
+            font-size: 15px;
+            line-height: 26px;
+            color: #1D1F21;
+        }
+
+        &__icon {
+            margin: 4px 4px 0 0;
+            width: 18px;
+            height: 18px;
+
+        }
+
+        &__images {
+            margin: 75px 0px 0 38px;
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+        }
+
+        &__background {
+            width: 285.57px;
+            height: 286.21px;
+            transform: rotate(9.62deg);
+
+            &._active {
+                background-image: url(../img/hire-hero-background-img.png);
+                background-size: 285.57px 286.21px;
+            }
+        }
+
+
+        &__img {
+            position: absolute;
+            top: 5px;
+            left: -38px;
+            width: 279px;
+            height: 279px;
+
+            &._active {
+                background-image: url(../img/hire-hero-img.png);
+                background-size: 279px 279px;
+            }
+        }
+    }
+
+
+    .hire-benefits {
+        margin: 63px 0 0 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__color-words {
+            margin: 0 0 0 0px;
+            max-width: 115px;
+            font-family: 'Proxima-700';
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        &__title {
+            margin: 0px 0 0 0px;
+            max-width: 225px;
+            font-family: 'Proxima-700';
+            font-size: 26px;
+            line-height: 34px;
+            text-align: left;
+            color: #FCFFFF;
+        }
+
+        &__container {
+            margin: 29px 0 0 0;
+            max-width: 345px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 11px;
+        }
+
+        &__block {
+            width: 167px;
+            height: 187px;
+            background: #212426;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+            &.lower {
+                margin-top: 5px;
+            }
+        }
+
+        &__icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+            border-radius: 8px;
+            padding: 9px;
+        }
+
+        &__star {
+            width: 18px;
+            height: 18px;
+        }
+
+        &__heading {
+            margin: 7px 0 0 -2.5px;
+            width: 99px;
+            font-family: 'Proxima-700';
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: #FCFFFF;
+        }
+
+        &__text {
+            margin: 1px 0 0 0;
+            max-width: 213px;
+            font-family: 'Proxima-400';
+            font-size: 12px;
+            line-height: 20px;
+            color: #FCFFFF;
+        }
+    }
+
+    .hire-page-form {
+        margin: 24px 0 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hire-page-footer {
+        margin: 35px 0 0 0;
+        width: 100%;
+
+    }
+}
+
+
+
+
+
+
+@import 'header';
+@import 'footer';
+@import 'contact-form';
+
+
+@import 'gallery';
+@import 'customs';
+@import 'product';
+@import 'auction';
+@import 'payment';
+@import 'pricing';
+
+@import "../../node_modules/swiper/swiper-bundle.min.css";
