@@ -47,6 +47,14 @@
         font-size: 14px;
         line-height: 19px;
         color: #C8D2DC;
+        &:hover{
+            transition: 0.3s;
+            text-shadow: #FFF 0px 0px 5px,#FFF 0px 0px 10px;
+        }
+        &._active{
+            transition: 0.3s;
+            text-shadow: #FFF 0px 0px 5px, #7E51FF 0px 0px 10px, #7E51FF 0px 0px 30px, #7E51FF 0px 0px 20px, #7E51FF 0px 0px 25px, #7E51FF 0px 0px 37px;
+        }
     }
 
     &__lock-icon {
