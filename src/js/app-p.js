@@ -23,7 +23,7 @@ const mainSwiper = new Swiper('.main-slider', {
         200: {
             slidesPerView: 1.3,
             spaceBetween: 25,
-            loop:false,
+            loop: false,
         },
         500: {
             slidesPerView: 2,
@@ -32,6 +32,32 @@ const mainSwiper = new Swiper('.main-slider', {
         // when window width is >= 480px
         769: {
             slidesPerView: 3,
+            spaceBetween: 25,
+        },
+        1025: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+});
+
+const forumSwiper = new Swiper('.forum-hero__slider', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    breakpoints: {
+        // when window width is >= 320px
+        200: {
+            slidesPerView: 1.2,
+            spaceBetween: 6,
+        },
+        500: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        // when window width is >= 480px
+        769: {
+            slidesPerView: 2,
             spaceBetween: 25,
         },
         1025: {
@@ -195,14 +221,14 @@ if (subsButtons) {
 //************HIDDEN-INFO***************/
 let hideButton = document.querySelector(".auction-about__button");
 let hidetext = document.querySelectorAll(".auction-about__text");
-if(hideButton){
+if (hideButton) {
     hideButton.addEventListener("click", function (e) {
         hidetext.forEach(item => {
             item.classList.toggle('hidden');
         })
         if (hidetext[0].classList.contains('hidden')) {
             hideButton.innerHTML = "<span>Show info</span>";
-        }else{
+        } else {
             hideButton.innerHTML = "<span>Hide info</span>";
         }
     })
@@ -211,8 +237,8 @@ if(hideButton){
 
 //**********COLOR-PICKER***********/
 let colors = document.querySelectorAll('.custom-form__color');
-for (let i = 0; i < colors.length; i++){
-    colors[i].addEventListener("click", function (e) { 
+for (let i = 0; i < colors.length; i++) {
+    colors[i].addEventListener("click", function (e) {
         colors.forEach(item => {
             item.classList.remove('active');
         })
@@ -221,8 +247,8 @@ for (let i = 0; i < colors.length; i++){
 }
 
 //**********DROPDOWN-ORDERING********** */
-let radioOrderingsWContent = document.querySelectorAll('.w-content'); 
-let radioContent = document.querySelectorAll('.ordering__chosen-content'); 
+let radioOrderingsWContent = document.querySelectorAll('.w-content');
+let radioContent = document.querySelectorAll('.ordering__chosen-content');
 
 let radioOrderingsEmpty = document.querySelectorAll('.empty');
 
