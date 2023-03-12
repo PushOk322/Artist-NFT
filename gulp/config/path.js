@@ -19,9 +19,8 @@ export const path = {
         images: `${srcFolder}/img/**/*.{jpg,webp,jpeg,png,gif}`,
         svg: `${srcFolder}/img/**/*.svg`,
         js: `${srcFolder}/js/app-p.js`,
-
-        scss: `${srcFolder}/scss/*.scss`,
-        main
+        scss: `${srcFolder}/scss/*.scss`,   //thats for deployment gulp compilation and development
+        // scss: `${srcFolder}/scss/style-p.scss`,   //thats for faster gulp compilation and development
         html: `${srcFolder}/*.html`,
         files: `${srcFolder}/files/**/*.*`,
     },
