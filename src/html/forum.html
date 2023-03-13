@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="webp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <script defer src="js/app-p-min.js"></script>
+
+    <link defer rel="stylesheet" href="css/style-p.css">
+    <title>forum-page</title>
+</head>
+
+<body>
+
+    <div class="page-definer index">
+    </div>
+
+    <section class="forum-page-header">
+        @@include('html/header.html')
+    </section>
+
+    <div class="forum-page-main">
+        <div class="forum-page-main__wrapper">
+            <div alt="" class="forum-page-main__background lazy"></div>
+
+            <section class="forum-hero">
+                <div class="forum-hero__title">Forum</div>
+                <div class="forum-hero__undertitle">
+                    <img src="@img/forum-hero-star.svg" alt="" class="forum-hero__star">
+                    Popular questions
+                </div>
+                <div class="swiper forum-hero__slider">
+                    <div class="swiper-wrapper forum-hero__wrapper">
+                        <div class="swiper-slide forum-hero__slide">
+                            <div class="forum-hero__container">
+                                <div class="forum-hero__background-img lazy first"></div>
+                                <div class="forum-hero__avatar lazy"></div>
+                                <div class="forum-hero__date">12/09/2021</div>
+                                <div class="forum-hero__name">Ivan Ivanov</div>
+                                <div class="forum-hero__heading">How can i Buy any art by crypto?</div>
+                                <div class="forum-hero__buttons">
+                                    <div class="forum-hero__view-button"><span>View answers (23)</span></div>
+                                    <div class="forum-hero__answer-button"> <img src="@img/forum-hero-arrow.svg" alt="" class="forum-hero__arrow"> Answer</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide forum-hero__slide">
+                            <div class="forum-hero__container">
+                                <div class="forum-hero__background-img lazy second"></div>
+                                <div class="forum-hero__avatar lazy"></div>
+                                <div class="forum-hero__date">12/09/2021</div>
+                                <div class="forum-hero__name">Ivan Ivanov</div>
+                                <div class="forum-hero__heading">How can i Buy any art by crypto?</div>
+                                <div class="forum-hero__buttons">
+                                    <div class="forum-hero__view-button"><span>View answers (23)</span></div>
+                                    <div class="forum-hero__answer-button"> <img src="@img/forum-hero-arrow.svg" alt=""
+                                            class="forum-hero__arrow">Answer</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide forum-hero__slide">
+                            <div class="forum-hero__container">
+                                <div class="forum-hero__background-img lazy third"></div>
+                                <div class="forum-hero__avatar lazy"></div>
+                                <div class="forum-hero__date">12/09/2021</div>
+                                <div class="forum-hero__name">Ivan Ivanov</div>
+                                <div class="forum-hero__heading">How can i Buy any art by crypto?</div>
+                                <div class="forum-hero__buttons">
+                                    <div class="forum-hero__view-button"><span>View answers (23)</span></div>
+                                    <div class="forum-hero__answer-button"> <img src="@img/forum-hero-arrow.svg" alt=""
+                                            class="forum-hero__arrow">Answer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="height"></div>
+
+            <section class="forum-page-footer">
+                @@include('html/footer.html')
+            </section>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -80,7 +80,7 @@
         .user_list {
             display: flex;
             flex-direction: column;
-            row-gap: 7px;
+            row-gap: 8px;
             padding: 32px 29px 339px 30px;
             
             border-right: 1px solid #525960;
@@ -99,6 +99,7 @@
                 background: #1D1F21;
                 padding: 14px 19px 14px 12px;
                 border-radius: 14px;
+                max-height: 64px;
                 &:hover {
                 background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
                 ._name {
@@ -110,6 +111,8 @@
                 .photo {
                     grid-row-start: 1;
                     grid-row-end: 3;
+                    max-width: 36px;
+                    max-height: 36px;
                 }
                 ._name {
                 font-family: $proxiSemi;
@@ -118,6 +121,7 @@
                 color: #C8D2DC;
                 grid-column-start: 2;
                 grid-column-end: 3;
+                max-height: 15px;
                 }
                 ._time {
                 font-family: $proxiReg;
@@ -128,6 +132,7 @@
                 grid-column-start: 3;
                 grid-column-end: 4;
                 justify-self: flex-end;
+                max-height: 15px;
                 }
                 ._info {
                 font-family: $proxiReg;
@@ -136,6 +141,9 @@
                 color: #FCFFFF;
                 grid-column-start: 2;   
                 grid-column-end: 4;             
+                }
+                ._margin {
+                    margin-top: -17px;
                 }
             }
         }
@@ -164,6 +172,10 @@
                     font-size: 12px;
                     line-height: 15px;
                     color: #FCFFFF;
+                }
+                .photo {
+                    width: 36px;
+                    height: 36px;
                 }
             }
             .chat_window {
@@ -239,7 +251,10 @@
                         grid-row-start: 1;
                         grid-row-end: 2;
                         align-self: flex-end;
-                    }
+                        max-width: 19px;
+                        max-height: 19px;
+                        margin-top: 59px;
+                         }
                     .message_text {
                 width: 402px;
                 height: 78px;
@@ -262,6 +277,9 @@
                         grid-column-start: 1;
                         grid-column-end: 3;
                     }
+                   img {
+                    align-self: flex-start;
+                   }
                 }
                 .button_wrapper {
                     width: 100%;
@@ -351,7 +369,7 @@
             display: flex;
             flex-direction: column;
             row-gap: 7px;
-            padding: 17px 15px 339px 15px;
+            padding: 17px 15px 50px 15px;
             border-right: 1px solid #525960;
             position: sticky;
             .title {
@@ -380,6 +398,8 @@
                 .photo {
                     grid-row-start: 1;
                     grid-row-end: 3;
+                    max-width: 36px;
+                    max-height: 36px;
                 }
                 ._name {
                 font-family: $proxiSemi;
@@ -406,8 +426,11 @@
                 color: #FCFFFF;
                 grid-column-start: 2;   
                 grid-column-end: 4;  
-                letter-spacing: -0.01em;           
-                }
+                letter-spacing: -0.01em;    
+                 }
+                 ._margin {
+                    margin-top: -17px;
+                 }
             }
             .search_wrapper {
                 width: 100%;
@@ -627,6 +650,11 @@
             display: flex !important;
             justify-content: center !important;
             margin-right: 3px;
+            .photo {
+                width: 86px;
+                height: 97px;
+                object-fit:contain;
+            }
         }
     }
 }
