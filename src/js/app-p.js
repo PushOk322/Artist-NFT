@@ -283,20 +283,23 @@ const headerLinks = document.querySelectorAll(".header__link");
 if (pageDefiner.classList.contains("index")) {
     headerLinks[0].classList.toggle("_active");
 };
-if (pageDefiner.classList.contains("about")) {
+if (pageDefiner.classList.contains("gallery-page")) {
     headerLinks[1].classList.toggle("_active");
 };
-if (pageDefiner.classList.contains("payment")) {
+if (pageDefiner.classList.contains("customs")) {
     headerLinks[2].classList.toggle("_active");
 };
-if (pageDefiner.classList.contains("_for-clients")) {
+if (pageDefiner.classList.contains("auction-page")) {
     headerLinks[3].classList.toggle("_active");
 };
-if (pageDefiner.classList.contains("news") || pageDefiner.classList.contains("one-news")) {
+if (pageDefiner.classList.contains("pricing") || pageDefiner.classList.contains("one-news")) {
     headerLinks[4].classList.toggle("_active");
 };
 if (pageDefiner.classList.contains("contacts")) {
     headerLinks[5].classList.toggle("_active");
+};
+if (pageDefiner.classList.contains("forum-page")) {
+    headerLinks[6].classList.toggle("_active");
 };
 
 
